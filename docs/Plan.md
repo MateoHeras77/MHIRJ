@@ -8,6 +8,8 @@ Step 3 complete: `sync-flights` edge function deployed to project `zuzireuxicdmu
 Applied migrations in Supabase:
 - `20260305202553 create_raw_flights`
 - `20260305203015 harden_raw_flights_security`
+Step 4 manual test complete: `sync-flights` invoked for `2026-03-04T11:00:00Z` to `2026-03-04T13:00:00Z` with `rowsUpserted=130` and stored rows verified in `public.raw_flights`.
+Temporary test setting: edge function is currently deployed with `verify_jwt=false` (to be re-enabled before production use).
 
 <!-- Steps
 API Contract Discovery (blocks all other work)

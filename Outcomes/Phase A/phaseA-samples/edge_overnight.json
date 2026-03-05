@@ -1,18 +1,175 @@
 {
   "meta": {
-    "generatedAtUtc": "2026-03-05T20:18:18.420Z",
+    "generatedAtUtc": "2026-03-05T21:08:35.570Z",
     "airport": "YYZ",
     "fromLocal": "2026-03-04T23:00",
     "toLocal": "2026-03-05T05:00",
     "query": {
       "withLeg": "true",
       "direction": "Departure",
-      "withCancelled": "false"
+      "withCancelled": "false",
+      "withLocation": "true"
     },
     "keyAliasUsed": "key_1"
   },
   "response": {
     "departures": [
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 03:50Z",
+            "local": "2026-03-04 22:50-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:00Z",
+            "local": "2026-03-04 23:00-05:00"
+          },
+          "terminal": "3",
+          "gate": "B4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYWG",
+            "iata": "YWG",
+            "name": "Winnipeg",
+            "countryCode": "ca",
+            "timeZone": "America/Winnipeg"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 06:39Z",
+            "local": "2026-03-05 00:39-06:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 06:49Z",
+            "local": "2026-03-05 00:49-06:00"
+          },
+          "baggageBelt": "2",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "AM 7178",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Boeing 737-800"
+        },
+        "airline": {
+          "name": "Aeromexico",
+          "iata": "AM",
+          "icao": "AMX"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 03:50Z",
+            "local": "2026-03-04 22:50-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:00Z",
+            "local": "2026-03-04 23:00-05:00"
+          },
+          "terminal": "3",
+          "gate": "B4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYWG",
+            "iata": "YWG",
+            "name": "Winnipeg",
+            "countryCode": "ca",
+            "timeZone": "America/Winnipeg"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 06:39Z",
+            "local": "2026-03-05 00:39-06:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 06:49Z",
+            "local": "2026-03-05 00:49-06:00"
+          },
+          "baggageBelt": "2",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "TS 8816",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Boeing 737-800"
+        },
+        "airline": {
+          "name": "Air Transat",
+          "iata": "TS",
+          "icao": "TSC"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 03:50Z",
+            "local": "2026-03-04 22:50-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:00Z",
+            "local": "2026-03-04 23:00-05:00"
+          },
+          "terminal": "3",
+          "gate": "B4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYWG",
+            "iata": "YWG",
+            "name": "Winnipeg",
+            "countryCode": "ca",
+            "timeZone": "America/Winnipeg"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 06:39Z",
+            "local": "2026-03-05 00:39-06:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 06:49Z",
+            "local": "2026-03-05 00:49-06:00"
+          },
+          "baggageBelt": "2",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "AF 3000",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Boeing 737-800"
+        },
+        "airline": {
+          "name": "Air France",
+          "iata": "AF",
+          "icao": "AFR"
+        }
+      },
       {
         "departure": {
           "scheduledTime": {
@@ -63,6 +220,117 @@
           "name": "China Eastern",
           "iata": "MU",
           "icao": "CES"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 03:50Z",
+            "local": "2026-03-04 22:50-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:00Z",
+            "local": "2026-03-04 23:00-05:00"
+          },
+          "terminal": "3",
+          "gate": "B4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYWG",
+            "iata": "YWG",
+            "name": "Winnipeg",
+            "countryCode": "ca",
+            "timeZone": "America/Winnipeg"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 06:39Z",
+            "local": "2026-03-05 00:39-06:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 06:49Z",
+            "local": "2026-03-05 00:49-06:00"
+          },
+          "baggageBelt": "2",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "DL 7169",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Boeing 737-800"
+        },
+        "airline": {
+          "name": "Delta Air Lines",
+          "iata": "DL",
+          "icao": "DAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 03:50Z",
+            "local": "2026-03-04 22:50-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:00Z",
+            "local": "2026-03-04 23:00-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-05 04:23Z",
+            "local": "2026-03-04 23:23-05:00"
+          },
+          "terminal": "3",
+          "gate": "B4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYWG",
+            "iata": "YWG",
+            "name": "Winnipeg",
+            "countryCode": "ca",
+            "timeZone": "America/Winnipeg"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 06:39Z",
+            "local": "2026-03-05 00:39-06:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 06:49Z",
+            "local": "2026-03-05 00:49-06:00"
+          },
+          "baggageBelt": "2",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "WS 387",
+        "callSign": "WJA387",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GWSZ",
+          "modeS": "C080AE",
+          "model": "Boeing 737-800"
+        },
+        "airline": {
+          "name": "WestJet",
+          "iata": "WS",
+          "icao": "WJA"
         }
       },
       {
@@ -224,273 +492,6 @@
       {
         "departure": {
           "scheduledTime": {
-            "utc": "2026-03-05 03:50Z",
-            "local": "2026-03-04 22:50-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:00Z",
-            "local": "2026-03-04 23:00-05:00"
-          },
-          "terminal": "3",
-          "gate": "B4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYWG",
-            "iata": "YWG",
-            "name": "Winnipeg",
-            "countryCode": "ca",
-            "timeZone": "America/Winnipeg"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 06:39Z",
-            "local": "2026-03-05 00:39-06:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 06:49Z",
-            "local": "2026-03-05 00:49-06:00"
-          },
-          "baggageBelt": "2",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "AM 7178",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Boeing 737-800"
-        },
-        "airline": {
-          "name": "Aeromexico",
-          "iata": "AM",
-          "icao": "AMX"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 03:50Z",
-            "local": "2026-03-04 22:50-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:00Z",
-            "local": "2026-03-04 23:00-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-05 04:23Z",
-            "local": "2026-03-04 23:23-05:00"
-          },
-          "terminal": "3",
-          "gate": "B4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYWG",
-            "iata": "YWG",
-            "name": "Winnipeg",
-            "countryCode": "ca",
-            "timeZone": "America/Winnipeg"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 06:39Z",
-            "local": "2026-03-05 00:39-06:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 06:49Z",
-            "local": "2026-03-05 00:49-06:00"
-          },
-          "baggageBelt": "2",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "WS 387",
-        "callSign": "WJA387",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GWSZ",
-          "modeS": "C080AE",
-          "model": "Boeing 737-800"
-        },
-        "airline": {
-          "name": "WestJet",
-          "iata": "WS",
-          "icao": "WJA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 03:50Z",
-            "local": "2026-03-04 22:50-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:00Z",
-            "local": "2026-03-04 23:00-05:00"
-          },
-          "terminal": "3",
-          "gate": "B4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYWG",
-            "iata": "YWG",
-            "name": "Winnipeg",
-            "countryCode": "ca",
-            "timeZone": "America/Winnipeg"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 06:39Z",
-            "local": "2026-03-05 00:39-06:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 06:49Z",
-            "local": "2026-03-05 00:49-06:00"
-          },
-          "baggageBelt": "2",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "DL 7169",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Boeing 737-800"
-        },
-        "airline": {
-          "name": "Delta Air Lines",
-          "iata": "DL",
-          "icao": "DAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 03:50Z",
-            "local": "2026-03-04 22:50-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:00Z",
-            "local": "2026-03-04 23:00-05:00"
-          },
-          "terminal": "3",
-          "gate": "B4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYWG",
-            "iata": "YWG",
-            "name": "Winnipeg",
-            "countryCode": "ca",
-            "timeZone": "America/Winnipeg"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 06:39Z",
-            "local": "2026-03-05 00:39-06:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 06:49Z",
-            "local": "2026-03-05 00:49-06:00"
-          },
-          "baggageBelt": "2",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "AF 3000",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Boeing 737-800"
-        },
-        "airline": {
-          "name": "Air France",
-          "iata": "AF",
-          "icao": "AFR"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 03:50Z",
-            "local": "2026-03-04 22:50-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:00Z",
-            "local": "2026-03-04 23:00-05:00"
-          },
-          "terminal": "3",
-          "gate": "B4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYWG",
-            "iata": "YWG",
-            "name": "Winnipeg",
-            "countryCode": "ca",
-            "timeZone": "America/Winnipeg"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 06:39Z",
-            "local": "2026-03-05 00:39-06:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 06:49Z",
-            "local": "2026-03-05 00:49-06:00"
-          },
-          "baggageBelt": "2",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "TS 8816",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Boeing 737-800"
-        },
-        "airline": {
-          "name": "Air Transat",
-          "iata": "TS",
-          "icao": "TSC"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
             "utc": "2026-03-05 04:10Z",
             "local": "2026-03-04 23:10-05:00"
           },
@@ -637,20 +638,20 @@
             "Live"
           ]
         },
-        "number": "AC 432",
+        "number": "BR 3092",
         "callSign": "ACA432",
         "status": "Departed",
-        "codeshareStatus": "IsOperator",
+        "codeshareStatus": "IsCodeshared",
         "isCargo": false,
         "aircraft": {
           "reg": "C-GTZU",
           "modeS": "C07973",
-          "model": "Airbus A220-300"
+          "model": "Airbus A320"
         },
         "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
+          "name": "EVA Air",
+          "iata": "BR",
+          "icao": "EVA"
         }
       },
       {
@@ -802,20 +803,20 @@
             "Live"
           ]
         },
-        "number": "BR 3092",
+        "number": "AC 432",
         "callSign": "ACA432",
         "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
+        "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
           "reg": "C-GTZU",
           "modeS": "C07973",
-          "model": "Airbus A320"
+          "model": "Airbus A220-300"
         },
         "airline": {
-          "name": "EVA Air",
-          "iata": "BR",
-          "icao": "EVA"
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
         }
       },
       {
@@ -876,6 +877,61 @@
           "name": "Air Canada",
           "iata": "AC",
           "icao": "ACA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 02:55Z",
+            "local": "2026-03-04 21:55-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:13Z",
+            "local": "2026-03-04 23:13-05:00"
+          },
+          "terminal": "1",
+          "gate": "D43",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYHZ",
+            "iata": "YHZ",
+            "name": "Halifax",
+            "countryCode": "ca",
+            "timeZone": "America/Halifax"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 05:06Z",
+            "local": "2026-03-05 01:06-04:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 06:02Z",
+            "local": "2026-03-05 02:02-04:00"
+          },
+          "gate": "12",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "LO 4159",
+        "callSign": "ACA2058",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FZUG",
+          "modeS": "C04413",
+          "model": "Airbus A319"
+        },
+        "airline": {
+          "name": "LOT - Polish",
+          "iata": "LO",
+          "icao": "LOT"
         }
       },
       {
@@ -991,61 +1047,6 @@
       {
         "departure": {
           "scheduledTime": {
-            "utc": "2026-03-05 02:55Z",
-            "local": "2026-03-04 21:55-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:13Z",
-            "local": "2026-03-04 23:13-05:00"
-          },
-          "terminal": "1",
-          "gate": "D43",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYHZ",
-            "iata": "YHZ",
-            "name": "Halifax",
-            "countryCode": "ca",
-            "timeZone": "America/Halifax"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 05:06Z",
-            "local": "2026-03-05 01:06-04:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 06:02Z",
-            "local": "2026-03-05 02:02-04:00"
-          },
-          "gate": "12",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "LO 4159",
-        "callSign": "ACA2058",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FZUG",
-          "modeS": "C04413",
-          "model": "Airbus A319"
-        },
-        "airline": {
-          "name": "LOT - Polish",
-          "iata": "LO",
-          "icao": "LOT"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
             "utc": "2026-03-05 04:10Z",
             "local": "2026-03-04 23:10-05:00"
           },
@@ -1143,175 +1144,6 @@
             "Live"
           ]
         },
-        "number": "TS 8813",
-        "callSign": "WJA816",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GMXH",
-          "modeS": "C066B6",
-          "model": "Boeing 737"
-        },
-        "airline": {
-          "name": "Air Transat",
-          "iata": "TS",
-          "icao": "TSC"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 04:15Z",
-            "local": "2026-03-04 23:15-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:19Z",
-            "local": "2026-03-04 23:19-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-05 04:36Z",
-            "local": "2026-03-04 23:36-05:00"
-          },
-          "terminal": "3",
-          "gate": "C30",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYUL",
-            "iata": "YUL",
-            "name": "Montreal",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 05:38Z",
-            "local": "2026-03-05 00:38-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 05:28Z",
-            "local": "2026-03-05 00:28-05:00"
-          },
-          "gate": "9",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "WS 816",
-        "callSign": "WJA816",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GMXH",
-          "modeS": "C066B6",
-          "model": "Boeing 737 MAX 8"
-        },
-        "airline": {
-          "name": "WestJet",
-          "iata": "WS",
-          "icao": "WJA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 04:15Z",
-            "local": "2026-03-04 23:15-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:19Z",
-            "local": "2026-03-04 23:19-05:00"
-          },
-          "terminal": "3",
-          "gate": "C30",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYUL",
-            "iata": "YUL",
-            "name": "Montreal",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 05:38Z",
-            "local": "2026-03-05 00:38-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 05:28Z",
-            "local": "2026-03-05 00:28-05:00"
-          },
-          "gate": "9",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "CX 7090",
-        "callSign": "WJA816",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GMXH",
-          "modeS": "C066B6",
-          "model": "Boeing 737"
-        },
-        "airline": {
-          "name": "Cathay Pacific",
-          "iata": "CX",
-          "icao": "CPA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 04:15Z",
-            "local": "2026-03-04 23:15-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:19Z",
-            "local": "2026-03-04 23:19-05:00"
-          },
-          "terminal": "3",
-          "gate": "C30",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYUL",
-            "iata": "YUL",
-            "name": "Montreal",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 05:38Z",
-            "local": "2026-03-05 00:38-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 05:28Z",
-            "local": "2026-03-05 00:28-05:00"
-          },
-          "gate": "9",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
         "number": "VS 8024",
         "callSign": "WJA816",
         "status": "Departed",
@@ -1326,61 +1158,6 @@
           "name": "Virgin Atlantic",
           "iata": "VS",
           "icao": "VIR"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 04:15Z",
-            "local": "2026-03-04 23:15-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:19Z",
-            "local": "2026-03-04 23:19-05:00"
-          },
-          "terminal": "3",
-          "gate": "C30",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYUL",
-            "iata": "YUL",
-            "name": "Montreal",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 05:38Z",
-            "local": "2026-03-05 00:38-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 05:28Z",
-            "local": "2026-03-05 00:28-05:00"
-          },
-          "gate": "9",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "SK 9567",
-        "callSign": "WJA816",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GMXH",
-          "modeS": "C066B6",
-          "model": "Boeing 737"
-        },
-        "airline": {
-          "name": "SAS",
-          "iata": "SK",
-          "icao": "SAS"
         }
       },
       {
@@ -1532,6 +1309,116 @@
             "Live"
           ]
         },
+        "number": "TS 8813",
+        "callSign": "WJA816",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GMXH",
+          "modeS": "C066B6",
+          "model": "Boeing 737"
+        },
+        "airline": {
+          "name": "Air Transat",
+          "iata": "TS",
+          "icao": "TSC"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 04:15Z",
+            "local": "2026-03-04 23:15-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:19Z",
+            "local": "2026-03-04 23:19-05:00"
+          },
+          "terminal": "3",
+          "gate": "C30",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYUL",
+            "iata": "YUL",
+            "name": "Montreal",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 05:38Z",
+            "local": "2026-03-05 00:38-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 05:28Z",
+            "local": "2026-03-05 00:28-05:00"
+          },
+          "gate": "9",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "MU 1989",
+        "callSign": "WJA816",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GMXH",
+          "modeS": "C066B6",
+          "model": "Boeing 737"
+        },
+        "airline": {
+          "name": "China Eastern",
+          "iata": "MU",
+          "icao": "CES"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 04:15Z",
+            "local": "2026-03-04 23:15-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:19Z",
+            "local": "2026-03-04 23:19-05:00"
+          },
+          "terminal": "3",
+          "gate": "C30",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYUL",
+            "iata": "YUL",
+            "name": "Montreal",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 05:38Z",
+            "local": "2026-03-05 00:38-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 05:28Z",
+            "local": "2026-03-05 00:28-05:00"
+          },
+          "gate": "9",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
         "number": "DL 7267",
         "callSign": "WJA816",
         "status": "Departed",
@@ -1546,6 +1433,61 @@
           "name": "Delta Air Lines",
           "iata": "DL",
           "icao": "DAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 04:15Z",
+            "local": "2026-03-04 23:15-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:19Z",
+            "local": "2026-03-04 23:19-05:00"
+          },
+          "terminal": "3",
+          "gate": "C30",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYUL",
+            "iata": "YUL",
+            "name": "Montreal",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 05:38Z",
+            "local": "2026-03-05 00:38-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 05:28Z",
+            "local": "2026-03-05 00:28-05:00"
+          },
+          "gate": "9",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "CX 7090",
+        "callSign": "WJA816",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GMXH",
+          "modeS": "C066B6",
+          "model": "Boeing 737"
+        },
+        "airline": {
+          "name": "Cathay Pacific",
+          "iata": "CX",
+          "icao": "CPA"
         }
       },
       {
@@ -1668,6 +1610,10 @@
             "utc": "2026-03-05 04:19Z",
             "local": "2026-03-04 23:19-05:00"
           },
+          "runwayTime": {
+            "utc": "2026-03-05 04:36Z",
+            "local": "2026-03-04 23:36-05:00"
+          },
           "terminal": "3",
           "gate": "C30",
           "quality": [
@@ -1697,7 +1643,62 @@
             "Live"
           ]
         },
-        "number": "MU 1989",
+        "number": "WS 816",
+        "callSign": "WJA816",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GMXH",
+          "modeS": "C066B6",
+          "model": "Boeing 737 MAX 8"
+        },
+        "airline": {
+          "name": "WestJet",
+          "iata": "WS",
+          "icao": "WJA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 04:15Z",
+            "local": "2026-03-04 23:15-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:19Z",
+            "local": "2026-03-04 23:19-05:00"
+          },
+          "terminal": "3",
+          "gate": "C30",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYUL",
+            "iata": "YUL",
+            "name": "Montreal",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 05:38Z",
+            "local": "2026-03-05 00:38-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 05:28Z",
+            "local": "2026-03-05 00:28-05:00"
+          },
+          "gate": "9",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "SK 9567",
         "callSign": "WJA816",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -1708,9 +1709,9 @@
           "model": "Boeing 737"
         },
         "airline": {
-          "name": "China Eastern",
-          "iata": "MU",
-          "icao": "CES"
+          "name": "SAS",
+          "iata": "SK",
+          "icao": "SAS"
         }
       },
       {
@@ -1766,68 +1767,6 @@
           "name": "Air France",
           "iata": "AF",
           "icao": "AFR"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 04:30Z",
-            "local": "2026-03-04 23:30-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:21Z",
-            "local": "2026-03-04 23:21-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-05 04:42Z",
-            "local": "2026-03-04 23:42-05:00"
-          },
-          "terminal": "3",
-          "gate": "B40",
-          "runway": "05",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYOW",
-            "iata": "YOW",
-            "name": "Ottawa",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 05:38Z",
-            "local": "2026-03-05 00:38-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 05:27Z",
-            "local": "2026-03-05 00:27-05:00"
-          },
-          "terminal": "D",
-          "gate": "24",
-          "baggageBelt": "5",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "PD 179",
-        "callSign": "POE179",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GKQS",
-          "modeS": "C060C3",
-          "model": "Embraer 195"
-        },
-        "airline": {
-          "name": "Porter",
-          "iata": "PD",
-          "icao": "POE"
         }
       },
       {
@@ -1947,15 +1886,20 @@
       {
         "departure": {
           "scheduledTime": {
-            "utc": "2026-03-05 04:00Z",
-            "local": "2026-03-04 23:00-05:00"
+            "utc": "2026-03-05 04:30Z",
+            "local": "2026-03-04 23:30-05:00"
           },
           "revisedTime": {
-            "utc": "2026-03-05 04:22Z",
-            "local": "2026-03-04 23:22-05:00"
+            "utc": "2026-03-05 04:21Z",
+            "local": "2026-03-04 23:21-05:00"
           },
-          "terminal": "1",
-          "gate": "E77",
+          "runwayTime": {
+            "utc": "2026-03-05 04:42Z",
+            "local": "2026-03-04 23:42-05:00"
+          },
+          "terminal": "3",
+          "gate": "B40",
+          "runway": "05",
           "quality": [
             "Basic",
             "Live"
@@ -1963,99 +1907,42 @@
         },
         "arrival": {
           "airport": {
-            "icao": "EGLL",
-            "iata": "LHR",
-            "name": "London",
-            "countryCode": "gb",
-            "timeZone": "Europe/London"
+            "icao": "CYOW",
+            "iata": "YOW",
+            "name": "Ottawa",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
           },
           "scheduledTime": {
-            "utc": "2026-03-05 11:20Z",
-            "local": "2026-03-05 11:20+00:00"
+            "utc": "2026-03-05 05:38Z",
+            "local": "2026-03-05 00:38-05:00"
           },
           "revisedTime": {
-            "utc": "2026-03-05 10:55Z",
-            "local": "2026-03-05 10:55+00:00"
+            "utc": "2026-03-05 05:27Z",
+            "local": "2026-03-05 00:27-05:00"
           },
-          "runwayTime": {
-            "utc": "2026-03-05 10:55Z",
-            "local": "2026-03-05 10:55+00:00"
-          },
-          "terminal": "2",
-          "baggageBelt": "8",
+          "terminal": "D",
+          "gate": "24",
+          "baggageBelt": "5",
           "quality": [
             "Basic",
             "Live"
           ]
         },
-        "number": "TG 5806",
+        "number": "PD 179",
+        "callSign": "POE179",
         "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
+        "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
-          "model": "Boeing 777-300ER Passenger"
+          "reg": "C-GKQS",
+          "modeS": "C060C3",
+          "model": "Embraer 195"
         },
         "airline": {
-          "name": "Thai  International",
-          "iata": "TG",
-          "icao": "THA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 04:00Z",
-            "local": "2026-03-04 23:00-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:22Z",
-            "local": "2026-03-04 23:22-05:00"
-          },
-          "terminal": "1",
-          "gate": "E77",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "EGLL",
-            "iata": "LHR",
-            "name": "London",
-            "countryCode": "gb",
-            "timeZone": "Europe/London"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 11:20Z",
-            "local": "2026-03-05 11:20+00:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 10:55Z",
-            "local": "2026-03-05 10:55+00:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-05 10:55Z",
-            "local": "2026-03-05 10:55+00:00"
-          },
-          "terminal": "2",
-          "baggageBelt": "8",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "LH 6559",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Boeing 777-300ER Passenger"
-        },
-        "airline": {
-          "name": "Lufthansa",
-          "iata": "LH",
-          "icao": "DLH"
+          "name": "Porter",
+          "iata": "PD",
+          "icao": "POE"
         }
       },
       {
@@ -2170,6 +2057,63 @@
           "name": "Ethiopian",
           "iata": "ET",
           "icao": "ETH"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 04:00Z",
+            "local": "2026-03-04 23:00-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:22Z",
+            "local": "2026-03-04 23:22-05:00"
+          },
+          "terminal": "1",
+          "gate": "E77",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "EGLL",
+            "iata": "LHR",
+            "name": "London",
+            "countryCode": "gb",
+            "timeZone": "Europe/London"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 11:20Z",
+            "local": "2026-03-05 11:20+00:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 10:55Z",
+            "local": "2026-03-05 10:55+00:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-05 10:55Z",
+            "local": "2026-03-05 10:55+00:00"
+          },
+          "terminal": "2",
+          "baggageBelt": "8",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "OS 8288",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Boeing 777-300ER Passenger"
+        },
+        "airline": {
+          "name": "Austrian",
+          "iata": "OS",
+          "icao": "AUA"
         }
       },
       {
@@ -2338,7 +2282,7 @@
             "Live"
           ]
         },
-        "number": "OS 8288",
+        "number": "LH 6559",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
         "isCargo": false,
@@ -2346,9 +2290,66 @@
           "model": "Boeing 777-300ER Passenger"
         },
         "airline": {
-          "name": "Austrian",
-          "iata": "OS",
-          "icao": "AUA"
+          "name": "Lufthansa",
+          "iata": "LH",
+          "icao": "DLH"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 04:00Z",
+            "local": "2026-03-04 23:00-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:22Z",
+            "local": "2026-03-04 23:22-05:00"
+          },
+          "terminal": "1",
+          "gate": "E77",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "EGLL",
+            "iata": "LHR",
+            "name": "London",
+            "countryCode": "gb",
+            "timeZone": "Europe/London"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 11:20Z",
+            "local": "2026-03-05 11:20+00:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 10:55Z",
+            "local": "2026-03-05 10:55+00:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-05 10:55Z",
+            "local": "2026-03-05 10:55+00:00"
+          },
+          "terminal": "2",
+          "baggageBelt": "8",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "TG 5806",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Boeing 777-300ER Passenger"
+        },
+        "airline": {
+          "name": "Thai  International",
+          "iata": "TG",
+          "icao": "THA"
         }
       },
       {
@@ -2768,63 +2769,6 @@
             "Live"
           ]
         },
-        "number": "DL 7118",
-        "callSign": "WJA739",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FLSF",
-          "modeS": "C01EE6",
-          "model": "Boeing 737-800"
-        },
-        "airline": {
-          "name": "Delta Air Lines",
-          "iata": "DL",
-          "icao": "DAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 03:15Z",
-            "local": "2026-03-04 22:15-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:29Z",
-            "local": "2026-03-04 23:29-05:00"
-          },
-          "terminal": "3",
-          "gate": "B24",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYVR",
-            "iata": "YVR",
-            "name": "Vancouver",
-            "countryCode": "ca",
-            "timeZone": "America/Vancouver"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 08:38Z",
-            "local": "2026-03-05 00:38-08:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 09:43Z",
-            "local": "2026-03-05 01:43-08:00"
-          },
-          "terminal": "M",
-          "gate": "B13",
-          "baggageBelt": "1",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
         "number": "KE 6537",
         "callSign": "WJA739",
         "status": "Departed",
@@ -2896,6 +2840,63 @@
           "name": "Air France",
           "iata": "AF",
           "icao": "AFR"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 03:15Z",
+            "local": "2026-03-04 22:15-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:29Z",
+            "local": "2026-03-04 23:29-05:00"
+          },
+          "terminal": "3",
+          "gate": "B24",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYVR",
+            "iata": "YVR",
+            "name": "Vancouver",
+            "countryCode": "ca",
+            "timeZone": "America/Vancouver"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 08:38Z",
+            "local": "2026-03-05 00:38-08:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 09:43Z",
+            "local": "2026-03-05 01:43-08:00"
+          },
+          "terminal": "M",
+          "gate": "B13",
+          "baggageBelt": "1",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "DL 7118",
+        "callSign": "WJA739",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FLSF",
+          "modeS": "C01EE6",
+          "model": "Boeing 737-800"
+        },
+        "airline": {
+          "name": "Delta Air Lines",
+          "iata": "DL",
+          "icao": "DAL"
         }
       },
       {
@@ -2997,61 +2998,6 @@
             "Live"
           ]
         },
-        "number": "UA 8197",
-        "callSign": "ACA1937",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GBIJ",
-          "modeS": "C04826",
-          "model": "Airbus A319"
-        },
-        "airline": {
-          "name": "United",
-          "iata": "UA",
-          "icao": "UAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 01:55Z",
-            "local": "2026-03-04 20:55-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:30Z",
-            "local": "2026-03-04 23:30-05:00"
-          },
-          "terminal": "1",
-          "gate": "D45",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYXE",
-            "iata": "YXE",
-            "name": "Saskatoon",
-            "countryCode": "ca",
-            "timeZone": "America/Regina"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 05:35Z",
-            "local": "2026-03-04 23:35-06:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 07:15Z",
-            "local": "2026-03-05 01:15-06:00"
-          },
-          "gate": "5",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
         "number": "LH 6595",
         "callSign": "ACA1937",
         "status": "Departed",
@@ -3107,6 +3053,61 @@
             "Live"
           ]
         },
+        "number": "UA 8197",
+        "callSign": "ACA1937",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GBIJ",
+          "modeS": "C04826",
+          "model": "Airbus A319"
+        },
+        "airline": {
+          "name": "United",
+          "iata": "UA",
+          "icao": "UAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 01:55Z",
+            "local": "2026-03-04 20:55-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:30Z",
+            "local": "2026-03-04 23:30-05:00"
+          },
+          "terminal": "1",
+          "gate": "D45",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYXE",
+            "iata": "YXE",
+            "name": "Saskatoon",
+            "countryCode": "ca",
+            "timeZone": "America/Regina"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 05:35Z",
+            "local": "2026-03-04 23:35-06:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 07:15Z",
+            "local": "2026-03-05 01:15-06:00"
+          },
+          "gate": "5",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
         "number": "AV 6970",
         "callSign": "ACA1937",
         "status": "Departed",
@@ -3121,6 +3122,63 @@
           "name": "Avianca",
           "iata": "AV",
           "icao": "AVA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 04:30Z",
+            "local": "2026-03-04 23:30-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:31Z",
+            "local": "2026-03-04 23:31-05:00"
+          },
+          "terminal": "3",
+          "gate": "B22",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYOW",
+            "iata": "YOW",
+            "name": "Ottawa",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 05:39Z",
+            "local": "2026-03-05 00:39-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 05:34Z",
+            "local": "2026-03-05 00:34-05:00"
+          },
+          "terminal": "D",
+          "gate": "26",
+          "baggageBelt": "4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "SK 9563",
+        "callSign": "WJA588",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FFPH",
+          "modeS": "C00EC2",
+          "model": "Boeing 737-800"
+        },
+        "airline": {
+          "name": "SAS",
+          "iata": "SK",
+          "icao": "SAS"
         }
       },
       {
@@ -3226,20 +3284,17 @@
             "Live"
           ]
         },
-        "number": "KL 9628",
-        "callSign": "WJA588",
+        "number": "AF 3760",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
         "isCargo": false,
         "aircraft": {
-          "reg": "C-FFPH",
-          "modeS": "C00EC2",
           "model": "Boeing 737-800"
         },
         "airline": {
-          "name": "KLM",
-          "iata": "KL",
-          "icao": "KLM"
+          "name": "Air France",
+          "iata": "AF",
+          "icao": "AFR"
         }
       },
       {
@@ -3340,63 +3395,6 @@
             "Live"
           ]
         },
-        "number": "TS 8811",
-        "callSign": "WJA588",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FFPH",
-          "modeS": "C00EC2",
-          "model": "Boeing 737-800"
-        },
-        "airline": {
-          "name": "Air Transat",
-          "iata": "TS",
-          "icao": "TSC"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 04:30Z",
-            "local": "2026-03-04 23:30-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:31Z",
-            "local": "2026-03-04 23:31-05:00"
-          },
-          "terminal": "3",
-          "gate": "B22",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYOW",
-            "iata": "YOW",
-            "name": "Ottawa",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 05:39Z",
-            "local": "2026-03-05 00:39-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 05:34Z",
-            "local": "2026-03-05 00:34-05:00"
-          },
-          "terminal": "D",
-          "gate": "26",
-          "baggageBelt": "4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
         "number": "PR 3036",
         "callSign": "WJA588",
         "status": "Departed",
@@ -3411,63 +3409,6 @@
           "name": "Philippine",
           "iata": "PR",
           "icao": "PAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 04:30Z",
-            "local": "2026-03-04 23:30-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:31Z",
-            "local": "2026-03-04 23:31-05:00"
-          },
-          "terminal": "3",
-          "gate": "B22",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYOW",
-            "iata": "YOW",
-            "name": "Ottawa",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 05:39Z",
-            "local": "2026-03-05 00:39-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 05:34Z",
-            "local": "2026-03-05 00:34-05:00"
-          },
-          "terminal": "D",
-          "gate": "26",
-          "baggageBelt": "4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "MU 1971",
-        "callSign": "WJA588",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FFPH",
-          "modeS": "C00EC2",
-          "model": "Boeing 737-800"
-        },
-        "airline": {
-          "name": "China Eastern",
-          "iata": "MU",
-          "icao": "CES"
         }
       },
       {
@@ -3568,61 +3509,7 @@
             "Live"
           ]
         },
-        "number": "AF 3760",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Boeing 737-800"
-        },
-        "airline": {
-          "name": "Air France",
-          "iata": "AF",
-          "icao": "AFR"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 04:30Z",
-            "local": "2026-03-04 23:30-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:31Z",
-            "local": "2026-03-04 23:31-05:00"
-          },
-          "terminal": "3",
-          "gate": "B22",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYOW",
-            "iata": "YOW",
-            "name": "Ottawa",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 05:39Z",
-            "local": "2026-03-05 00:39-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 05:34Z",
-            "local": "2026-03-05 00:34-05:00"
-          },
-          "terminal": "D",
-          "gate": "26",
-          "baggageBelt": "4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "SK 9563",
+        "number": "MU 1971",
         "callSign": "WJA588",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -3633,66 +3520,9 @@
           "model": "Boeing 737-800"
         },
         "airline": {
-          "name": "SAS",
-          "iata": "SK",
-          "icao": "SAS"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 04:30Z",
-            "local": "2026-03-04 23:30-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:31Z",
-            "local": "2026-03-04 23:31-05:00"
-          },
-          "terminal": "3",
-          "gate": "B22",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYOW",
-            "iata": "YOW",
-            "name": "Ottawa",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 05:39Z",
-            "local": "2026-03-05 00:39-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 05:34Z",
-            "local": "2026-03-05 00:34-05:00"
-          },
-          "terminal": "D",
-          "gate": "26",
-          "baggageBelt": "4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "DL 7158",
-        "callSign": "WJA588",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FFPH",
-          "modeS": "C00EC2",
-          "model": "Boeing 737-800"
-        },
-        "airline": {
-          "name": "Delta Air Lines",
-          "iata": "DL",
-          "icao": "DAL"
+          "name": "China Eastern",
+          "iata": "MU",
+          "icao": "CES"
         }
       },
       {
@@ -3750,6 +3580,177 @@
           "name": "Cathay Pacific",
           "iata": "CX",
           "icao": "CPA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 04:30Z",
+            "local": "2026-03-04 23:30-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:31Z",
+            "local": "2026-03-04 23:31-05:00"
+          },
+          "terminal": "3",
+          "gate": "B22",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYOW",
+            "iata": "YOW",
+            "name": "Ottawa",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 05:39Z",
+            "local": "2026-03-05 00:39-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 05:34Z",
+            "local": "2026-03-05 00:34-05:00"
+          },
+          "terminal": "D",
+          "gate": "26",
+          "baggageBelt": "4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "TS 8811",
+        "callSign": "WJA588",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FFPH",
+          "modeS": "C00EC2",
+          "model": "Boeing 737-800"
+        },
+        "airline": {
+          "name": "Air Transat",
+          "iata": "TS",
+          "icao": "TSC"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 04:30Z",
+            "local": "2026-03-04 23:30-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:31Z",
+            "local": "2026-03-04 23:31-05:00"
+          },
+          "terminal": "3",
+          "gate": "B22",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYOW",
+            "iata": "YOW",
+            "name": "Ottawa",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 05:39Z",
+            "local": "2026-03-05 00:39-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 05:34Z",
+            "local": "2026-03-05 00:34-05:00"
+          },
+          "terminal": "D",
+          "gate": "26",
+          "baggageBelt": "4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "KL 9628",
+        "callSign": "WJA588",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FFPH",
+          "modeS": "C00EC2",
+          "model": "Boeing 737-800"
+        },
+        "airline": {
+          "name": "KLM",
+          "iata": "KL",
+          "icao": "KLM"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 04:30Z",
+            "local": "2026-03-04 23:30-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:31Z",
+            "local": "2026-03-04 23:31-05:00"
+          },
+          "terminal": "3",
+          "gate": "B22",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYOW",
+            "iata": "YOW",
+            "name": "Ottawa",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 05:39Z",
+            "local": "2026-03-05 00:39-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 05:34Z",
+            "local": "2026-03-05 00:34-05:00"
+          },
+          "terminal": "D",
+          "gate": "26",
+          "baggageBelt": "4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "DL 7158",
+        "callSign": "WJA588",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FFPH",
+          "modeS": "C00EC2",
+          "model": "Boeing 737-800"
+        },
+        "airline": {
+          "name": "Delta Air Lines",
+          "iata": "DL",
+          "icao": "DAL"
         }
       },
       {
@@ -3906,62 +3907,6 @@
             "Live"
           ]
         },
-        "number": "AC 159",
-        "callSign": "ACA159",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GEHY",
-          "modeS": "C05007",
-          "model": "Boeing 737"
-        },
-        "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 04:05Z",
-            "local": "2026-03-04 23:05-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:48Z",
-            "local": "2026-03-04 23:48-05:00"
-          },
-          "terminal": "1",
-          "gate": "D37",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYYC",
-            "iata": "YYC",
-            "name": "Calgary",
-            "countryCode": "ca",
-            "timeZone": "America/Edmonton"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 08:29Z",
-            "local": "2026-03-05 01:29-07:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 09:03Z",
-            "local": "2026-03-05 02:03-07:00"
-          },
-          "terminal": "D",
-          "gate": "C56",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
         "number": "LO 4113",
         "callSign": "ACA159",
         "status": "Departed",
@@ -4018,7 +3963,7 @@
             "Live"
           ]
         },
-        "number": "EI 8545",
+        "number": "OS 8278",
         "callSign": "ACA159",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -4029,9 +3974,9 @@
           "model": "Boeing 737"
         },
         "airline": {
-          "name": "Aer Lingus",
-          "iata": "EI",
-          "icao": "EIN"
+          "name": "Austrian",
+          "iata": "OS",
+          "icao": "AUA"
         }
       },
       {
@@ -4074,7 +4019,63 @@
             "Live"
           ]
         },
-        "number": "OS 8278",
+        "number": "AC 159",
+        "callSign": "ACA159",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GEHY",
+          "modeS": "C05007",
+          "model": "Boeing 737"
+        },
+        "airline": {
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 04:05Z",
+            "local": "2026-03-04 23:05-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:48Z",
+            "local": "2026-03-04 23:48-05:00"
+          },
+          "terminal": "1",
+          "gate": "D37",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYYC",
+            "iata": "YYC",
+            "name": "Calgary",
+            "countryCode": "ca",
+            "timeZone": "America/Edmonton"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 08:29Z",
+            "local": "2026-03-05 01:29-07:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 09:03Z",
+            "local": "2026-03-05 02:03-07:00"
+          },
+          "terminal": "D",
+          "gate": "C56",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "EI 8545",
         "callSign": "ACA159",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -4085,9 +4086,9 @@
           "model": "Boeing 737"
         },
         "airline": {
-          "name": "Austrian",
-          "iata": "OS",
-          "icao": "AUA"
+          "name": "Aer Lingus",
+          "iata": "EI",
+          "icao": "EIN"
         }
       },
       {
@@ -4211,6 +4212,62 @@
             "utc": "2026-03-05 04:55Z",
             "local": "2026-03-04 23:55-05:00"
           },
+          "terminal": "1",
+          "gate": "E73",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "SKBO",
+            "iata": "BOG",
+            "name": "Bogotá",
+            "countryCode": "co",
+            "timeZone": "America/Bogota"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 11:10Z",
+            "local": "2026-03-05 06:10-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 10:44Z",
+            "local": "2026-03-05 05:44-05:00"
+          },
+          "terminal": "1",
+          "baggageBelt": "06",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "EY 2621",
+        "callSign": "AVA205",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "N934AG",
+          "modeS": "ACF48C",
+          "model": "Airbus A320 NEO"
+        },
+        "airline": {
+          "name": "Etihad",
+          "iata": "EY",
+          "icao": "ETD"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 04:55Z",
+            "local": "2026-03-04 23:55-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 04:55Z",
+            "local": "2026-03-04 23:55-05:00"
+          },
           "runwayTime": {
             "utc": "2026-03-05 05:24Z",
             "local": "2026-03-05 00:24-05:00"
@@ -4320,62 +4377,6 @@
       {
         "departure": {
           "scheduledTime": {
-            "utc": "2026-03-05 04:55Z",
-            "local": "2026-03-04 23:55-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 04:55Z",
-            "local": "2026-03-04 23:55-05:00"
-          },
-          "terminal": "1",
-          "gate": "E73",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "SKBO",
-            "iata": "BOG",
-            "name": "Bogotá",
-            "countryCode": "co",
-            "timeZone": "America/Bogota"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 11:10Z",
-            "local": "2026-03-05 06:10-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 10:44Z",
-            "local": "2026-03-05 05:44-05:00"
-          },
-          "terminal": "1",
-          "baggageBelt": "06",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "EY 2621",
-        "callSign": "AVA205",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "N934AG",
-          "modeS": "ACF48C",
-          "model": "Airbus A320 NEO"
-        },
-        "airline": {
-          "name": "Etihad",
-          "iata": "EY",
-          "icao": "ETD"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
             "utc": "2026-03-05 05:24Z",
             "local": "2026-03-05 00:24-05:00"
           },
@@ -4448,8 +4449,8 @@
             "local": "2026-03-06 05:15+08:00"
           },
           "revisedTime": {
-            "utc": "2026-03-05 20:50Z",
-            "local": "2026-03-06 04:50+08:00"
+            "utc": "2026-03-05 20:55Z",
+            "local": "2026-03-06 04:55+08:00"
           },
           "terminal": "1",
           "gate": "S2",
@@ -4549,8 +4550,13 @@
             "utc": "2026-03-05 05:39Z",
             "local": "2026-03-05 00:39-05:00"
           },
+          "runwayTime": {
+            "utc": "2026-03-05 06:20Z",
+            "local": "2026-03-05 01:20-05:00"
+          },
           "terminal": "1",
           "gate": "E79",
+          "runway": "05",
           "quality": [
             "Basic",
             "Live"
@@ -4572,6 +4578,7 @@
             "utc": "2026-03-05 22:03Z",
             "local": "2026-03-06 06:03+08:00"
           },
+          "terminal": "2",
           "gate": "B7",
           "baggageBelt": "01",
           "quality": [
@@ -4579,17 +4586,20 @@
             "Live"
           ]
         },
-        "number": "AC 6549",
+        "number": "BR 35",
+        "callSign": "EVA035",
         "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
+        "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
-          "model": "Boeing 777-300ER"
+          "reg": "B-16719",
+          "modeS": "8990E1",
+          "model": "Boeing 777"
         },
         "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
+          "name": "EVA Air",
+          "iata": "BR",
+          "icao": "EVA"
         }
       },
       {
@@ -4655,13 +4665,8 @@
             "utc": "2026-03-05 05:39Z",
             "local": "2026-03-05 00:39-05:00"
           },
-          "runwayTime": {
-            "utc": "2026-03-05 06:20Z",
-            "local": "2026-03-05 01:20-05:00"
-          },
           "terminal": "1",
           "gate": "E79",
-          "runway": "05",
           "quality": [
             "Basic",
             "Live"
@@ -4683,7 +4688,6 @@
             "utc": "2026-03-05 22:03Z",
             "local": "2026-03-06 06:03+08:00"
           },
-          "terminal": "2",
           "gate": "B7",
           "baggageBelt": "01",
           "quality": [
@@ -4691,20 +4695,17 @@
             "Live"
           ]
         },
-        "number": "BR 35",
-        "callSign": "EVA035",
+        "number": "AC 6549",
         "status": "Departed",
-        "codeshareStatus": "IsOperator",
+        "codeshareStatus": "IsCodeshared",
         "isCargo": false,
         "aircraft": {
-          "reg": "B-16719",
-          "modeS": "8990E1",
-          "model": "Boeing 777"
+          "model": "Boeing 777-300ER"
         },
         "airline": {
-          "name": "EVA Air",
-          "iata": "BR",
-          "icao": "EVA"
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
         }
       },
       {
@@ -4759,67 +4760,6 @@
           "name": "Philippine",
           "iata": "PR",
           "icao": "PAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 05:20Z",
-            "local": "2026-03-05 00:20-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 06:14Z",
-            "local": "2026-03-05 01:14-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-05 06:37Z",
-            "local": "2026-03-05 01:37-05:00"
-          },
-          "terminal": "1",
-          "gate": "E71",
-          "runway": "05",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "VIDP",
-            "iata": "DEL",
-            "name": "New Delhi",
-            "countryCode": "in",
-            "timeZone": "Asia/Kolkata"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 21:30Z",
-            "local": "2026-03-06 03:00+05:30"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 21:30Z",
-            "local": "2026-03-06 03:00+05:30"
-          },
-          "terminal": "3",
-          "baggageBelt": "9",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "AI 190",
-        "callSign": "AIC190",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "VT-ALK",
-          "modeS": "8003E3",
-          "model": "Boeing 777"
-        },
-        "airline": {
-          "name": "Air India",
-          "iata": "AI",
-          "icao": "AIC"
         }
       },
       {
@@ -4886,6 +4826,54 @@
       {
         "departure": {
           "scheduledTime": {
+            "utc": "2026-03-05 05:20Z",
+            "local": "2026-03-05 00:20-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 06:14Z",
+            "local": "2026-03-05 01:14-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-05 06:37Z",
+            "local": "2026-03-05 01:37-05:00"
+          },
+          "terminal": "1",
+          "gate": "E71",
+          "runway": "05",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "VIDP",
+            "iata": "DEL",
+            "name": "New Delhi",
+            "countryCode": "in",
+            "timeZone": "Asia/Kolkata"
+          },
+          "quality": []
+        },
+        "number": "AI 190",
+        "callSign": "AIC190",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "VT-ALK",
+          "modeS": "8003E3",
+          "model": "Boeing 777"
+        },
+        "airline": {
+          "name": "Air India",
+          "iata": "AI",
+          "icao": "AIC"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
             "utc": "2026-03-05 06:15Z",
             "local": "2026-03-05 01:15-05:00"
           },
@@ -4938,177 +4926,6 @@
         "airline": {
           "name": "Morningstar Air Express",
           "icao": "MAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 05:30Z",
-            "local": "2026-03-05 00:30-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 06:32Z",
-            "local": "2026-03-05 01:32-05:00"
-          },
-          "terminal": "1",
-          "gate": "D36",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYOW",
-            "iata": "YOW",
-            "name": "Ottawa",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 06:38Z",
-            "local": "2026-03-05 01:38-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 07:29Z",
-            "local": "2026-03-05 02:29-05:00"
-          },
-          "terminal": "D",
-          "gate": "18",
-          "baggageBelt": "4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "TP 8050",
-        "callSign": "ACA472",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GJYE",
-          "modeS": "C05EE1",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "TAP Air Portugal",
-          "iata": "TP",
-          "icao": "TAP"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 05:30Z",
-            "local": "2026-03-05 00:30-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 06:32Z",
-            "local": "2026-03-05 01:32-05:00"
-          },
-          "terminal": "1",
-          "gate": "D36",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYOW",
-            "iata": "YOW",
-            "name": "Ottawa",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 06:38Z",
-            "local": "2026-03-05 01:38-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 07:29Z",
-            "local": "2026-03-05 02:29-05:00"
-          },
-          "terminal": "D",
-          "gate": "18",
-          "baggageBelt": "4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "LO 4143",
-        "callSign": "ACA472",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GJYE",
-          "modeS": "C05EE1",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "LOT - Polish",
-          "iata": "LO",
-          "icao": "LOT"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-05 05:30Z",
-            "local": "2026-03-05 00:30-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 06:32Z",
-            "local": "2026-03-05 01:32-05:00"
-          },
-          "terminal": "1",
-          "gate": "D36",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYOW",
-            "iata": "YOW",
-            "name": "Ottawa",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 06:38Z",
-            "local": "2026-03-05 01:38-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 07:29Z",
-            "local": "2026-03-05 02:29-05:00"
-          },
-          "terminal": "D",
-          "gate": "18",
-          "baggageBelt": "4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "CX 1606",
-        "callSign": "ACA472",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GJYE",
-          "modeS": "C05EE1",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "Cathay Pacific",
-          "iata": "CX",
-          "icao": "CPA"
         }
       },
       {
@@ -5223,6 +5040,177 @@
           "name": "Avianca",
           "iata": "AV",
           "icao": "AVA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 05:30Z",
+            "local": "2026-03-05 00:30-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 06:32Z",
+            "local": "2026-03-05 01:32-05:00"
+          },
+          "terminal": "1",
+          "gate": "D36",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYOW",
+            "iata": "YOW",
+            "name": "Ottawa",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 06:38Z",
+            "local": "2026-03-05 01:38-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 07:29Z",
+            "local": "2026-03-05 02:29-05:00"
+          },
+          "terminal": "D",
+          "gate": "18",
+          "baggageBelt": "4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "CX 1606",
+        "callSign": "ACA472",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GJYE",
+          "modeS": "C05EE1",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "Cathay Pacific",
+          "iata": "CX",
+          "icao": "CPA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 05:30Z",
+            "local": "2026-03-05 00:30-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 06:32Z",
+            "local": "2026-03-05 01:32-05:00"
+          },
+          "terminal": "1",
+          "gate": "D36",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYOW",
+            "iata": "YOW",
+            "name": "Ottawa",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 06:38Z",
+            "local": "2026-03-05 01:38-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 07:29Z",
+            "local": "2026-03-05 02:29-05:00"
+          },
+          "terminal": "D",
+          "gate": "18",
+          "baggageBelt": "4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "TP 8050",
+        "callSign": "ACA472",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GJYE",
+          "modeS": "C05EE1",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "TAP Air Portugal",
+          "iata": "TP",
+          "icao": "TAP"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-05 05:30Z",
+            "local": "2026-03-05 00:30-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 06:32Z",
+            "local": "2026-03-05 01:32-05:00"
+          },
+          "terminal": "1",
+          "gate": "D36",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYOW",
+            "iata": "YOW",
+            "name": "Ottawa",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 06:38Z",
+            "local": "2026-03-05 01:38-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 07:29Z",
+            "local": "2026-03-05 02:29-05:00"
+          },
+          "terminal": "D",
+          "gate": "18",
+          "baggageBelt": "4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "LO 4143",
+        "callSign": "ACA472",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GJYE",
+          "modeS": "C05EE1",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "LOT - Polish",
+          "iata": "LO",
+          "icao": "LOT"
         }
       },
       {

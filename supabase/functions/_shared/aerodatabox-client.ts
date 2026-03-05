@@ -10,6 +10,7 @@ export type AeroDataBoxQuery = {
   direction: "Departure" | "Arrival" | "Both";
   withLeg: boolean;
   withCancelled: boolean;
+  withLocation: boolean;
 };
 
 export type AeroDataBoxResponse = {
@@ -98,6 +99,7 @@ function buildApiUrl(query: AeroDataBoxQuery, window: SyncWindow): string {
     withLeg: String(query.withLeg),
     direction: query.direction,
     withCancelled: String(query.withCancelled),
+    withLocation: String(query.withLocation),
   });
 
   return `${API_BASE}/flights/airports/iata/${query.airportIata}/${encodedFrom}/${encodedTo}?${params.toString()}`;

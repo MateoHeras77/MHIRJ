@@ -1,10 +1,11 @@
 {
-  "generatedAtUtc": "2026-03-05T20:18:18.430Z",
+  "generatedAtUtc": "2026-03-05T21:08:35.597Z",
   "airport": "YYZ",
   "query": {
     "withLeg": "true",
     "direction": "Departure",
-    "withCancelled": "false"
+    "withCancelled": "false",
+    "withLocation": "true"
   },
   "totalDepartureFlights": 580,
   "windows": [
@@ -203,11 +204,11 @@
     },
     {
       "path": "arrival.scheduledTime.utc",
-      "exists": 553,
-      "nonNull": 553,
+      "exists": 552,
+      "nonNull": 552,
       "nulls": 0,
-      "missing": 27,
-      "nonNullPct": 95.34
+      "missing": 28,
+      "nonNullPct": 95.17
     },
     {
       "path": "location.lat",
@@ -269,11 +270,11 @@
     },
     {
       "key": "number+departure.scheduledTime.utc+arrival.airport.iata+arrival.scheduledTime.utc",
-      "completeRows": 553,
-      "distinctValues": 552,
+      "completeRows": 552,
+      "distinctValues": 551,
       "duplicateRows": 1,
       "uniquenessPct": 99.82,
-      "coveragePct": 95.34
+      "coveragePct": 95.17
     },
     {
       "key": "callSign+departure.scheduledTime.utc",

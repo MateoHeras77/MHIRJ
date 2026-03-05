@@ -1,13 +1,14 @@
 {
   "meta": {
-    "generatedAtUtc": "2026-03-05T20:18:18.310Z",
+    "generatedAtUtc": "2026-03-05T21:08:27.256Z",
     "airport": "YYZ",
     "fromLocal": "2026-03-04T11:00",
     "toLocal": "2026-03-04T15:00",
     "query": {
       "withLeg": "true",
       "direction": "Departure",
-      "withCancelled": "false"
+      "withCancelled": "false",
+      "withLocation": "true"
     },
     "keyAliasUsed": "key_2"
   },
@@ -70,120 +71,6 @@
           "name": "Air Canada",
           "iata": "AC",
           "icao": "ACA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 15:55Z",
-            "local": "2026-03-04 10:55-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 16:06Z",
-            "local": "2026-03-04 11:06-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 16:28Z",
-            "local": "2026-03-04 11:28-05:00"
-          },
-          "terminal": "1",
-          "gate": "D28",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYWG",
-            "iata": "YWG",
-            "name": "Winnipeg",
-            "countryCode": "ca",
-            "timeZone": "America/Winnipeg"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 18:39Z",
-            "local": "2026-03-04 12:39-06:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:49Z",
-            "local": "2026-03-04 12:49-06:00"
-          },
-          "baggageBelt": "1",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "AC 261",
-        "callSign": "ACA261",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FGJI",
-          "modeS": "C010CB",
-          "model": "Airbus A320"
-        },
-        "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 15:55Z",
-            "local": "2026-03-04 10:55-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 16:06Z",
-            "local": "2026-03-04 11:06-05:00"
-          },
-          "terminal": "1",
-          "gate": "D28",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYWG",
-            "iata": "YWG",
-            "name": "Winnipeg",
-            "countryCode": "ca",
-            "timeZone": "America/Winnipeg"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 18:39Z",
-            "local": "2026-03-04 12:39-06:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:49Z",
-            "local": "2026-03-04 12:49-06:00"
-          },
-          "baggageBelt": "1",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "AV 2871",
-        "callSign": "ACA261",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FGJI",
-          "modeS": "C010CB",
-          "model": "Airbus A320"
-        },
-        "airline": {
-          "name": "Avianca",
-          "iata": "AV",
-          "icao": "AVA"
         }
       },
       {
@@ -280,6 +167,61 @@
             "Live"
           ]
         },
+        "number": "AV 2871",
+        "callSign": "ACA261",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FGJI",
+          "modeS": "C010CB",
+          "model": "Airbus A320"
+        },
+        "airline": {
+          "name": "Avianca",
+          "iata": "AV",
+          "icao": "AVA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 15:55Z",
+            "local": "2026-03-04 10:55-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 16:06Z",
+            "local": "2026-03-04 11:06-05:00"
+          },
+          "terminal": "1",
+          "gate": "D28",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYWG",
+            "iata": "YWG",
+            "name": "Winnipeg",
+            "countryCode": "ca",
+            "timeZone": "America/Winnipeg"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 18:39Z",
+            "local": "2026-03-04 12:39-06:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:49Z",
+            "local": "2026-03-04 12:49-06:00"
+          },
+          "baggageBelt": "1",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
         "number": "EK 5775",
         "callSign": "ACA261",
         "status": "Departed",
@@ -294,6 +236,65 @@
           "name": "Emirates",
           "iata": "EK",
           "icao": "UAE"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 15:55Z",
+            "local": "2026-03-04 10:55-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 16:06Z",
+            "local": "2026-03-04 11:06-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 16:28Z",
+            "local": "2026-03-04 11:28-05:00"
+          },
+          "terminal": "1",
+          "gate": "D28",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYWG",
+            "iata": "YWG",
+            "name": "Winnipeg",
+            "countryCode": "ca",
+            "timeZone": "America/Winnipeg"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 18:39Z",
+            "local": "2026-03-04 12:39-06:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:49Z",
+            "local": "2026-03-04 12:49-06:00"
+          },
+          "baggageBelt": "1",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "AC 261",
+        "callSign": "ACA261",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FGJI",
+          "modeS": "C010CB",
+          "model": "Airbus A320"
+        },
+        "airline": {
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
         }
       },
       {
@@ -442,10 +443,10 @@
             "Live"
           ]
         },
-        "number": "WS 1110",
+        "number": "DL 7148",
         "callSign": "WJA1110",
         "status": "Departed",
-        "codeshareStatus": "IsOperator",
+        "codeshareStatus": "IsCodeshared",
         "isCargo": false,
         "aircraft": {
           "reg": "C-FYBK",
@@ -453,9 +454,9 @@
           "model": "Boeing 737-800"
         },
         "airline": {
-          "name": "WestJet",
-          "iata": "WS",
-          "icao": "WJA"
+          "name": "Delta Air Lines",
+          "iata": "DL",
+          "icao": "DAL"
         }
       },
       {
@@ -501,10 +502,10 @@
             "Live"
           ]
         },
-        "number": "DL 7148",
+        "number": "WS 1110",
         "callSign": "WJA1110",
         "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
+        "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
           "reg": "C-FYBK",
@@ -512,9 +513,9 @@
           "model": "Boeing 737-800"
         },
         "airline": {
-          "name": "Delta Air Lines",
-          "iata": "DL",
-          "icao": "DAL"
+          "name": "WestJet",
+          "iata": "WS",
+          "icao": "WJA"
         }
       },
       {
@@ -613,10 +614,10 @@
             "Live"
           ]
         },
-        "number": "EK 5770",
+        "number": "AC 408",
         "callSign": "ACA408",
         "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
+        "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
           "reg": "C-FSKZ",
@@ -624,9 +625,9 @@
           "model": "Boeing 737"
         },
         "airline": {
-          "name": "Emirates",
-          "iata": "EK",
-          "icao": "UAE"
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
         }
       },
       {
@@ -668,10 +669,10 @@
             "Live"
           ]
         },
-        "number": "AC 408",
+        "number": "EK 5770",
         "callSign": "ACA408",
         "status": "Departed",
-        "codeshareStatus": "IsOperator",
+        "codeshareStatus": "IsCodeshared",
         "isCargo": false,
         "aircraft": {
           "reg": "C-FSKZ",
@@ -679,9 +680,9 @@
           "model": "Boeing 737"
         },
         "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
+          "name": "Emirates",
+          "iata": "EK",
+          "icao": "UAE"
         }
       },
       {
@@ -802,15 +803,15 @@
       {
         "departure": {
           "scheduledTime": {
-            "utc": "2026-03-04 16:15Z",
-            "local": "2026-03-04 11:15-05:00"
+            "utc": "2026-03-04 16:40Z",
+            "local": "2026-03-04 11:40-05:00"
           },
           "revisedTime": {
             "utc": "2026-03-04 16:36Z",
             "local": "2026-03-04 11:36-05:00"
           },
           "terminal": "3",
-          "gate": "B40",
+          "gate": "A13",
           "quality": [
             "Basic",
             "Live"
@@ -818,29 +819,32 @@
         },
         "arrival": {
           "airport": {
-            "icao": "TXKF",
-            "iata": "BDA",
-            "name": "Hamilton",
-            "countryCode": "bm",
-            "timeZone": "Atlantic/Bermuda"
+            "icao": "KORD",
+            "iata": "ORD",
+            "name": "Chicago",
+            "countryCode": "us",
+            "timeZone": "America/Chicago"
           },
           "scheduledTime": {
-            "utc": "2026-03-04 18:55Z",
-            "local": "2026-03-04 14:55-04:00"
+            "utc": "2026-03-04 18:35Z",
+            "local": "2026-03-04 12:35-06:00"
           },
+          "terminal": "3",
           "quality": [
             "Basic"
           ]
         },
-        "number": "2T 602",
+        "number": "AA 3604",
         "status": "Departed",
         "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
-          "model": "Embraer 190"
+          "model": "Embraer 170"
         },
         "airline": {
-          "name": "BermudAir"
+          "name": "American",
+          "iata": "AA",
+          "icao": "AAL"
         }
       },
       {
@@ -971,100 +975,6 @@
             "Basic"
           ]
         },
-        "number": "AA 3604",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Embraer 170"
-        },
-        "airline": {
-          "name": "American",
-          "iata": "AA",
-          "icao": "AAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 16:40Z",
-            "local": "2026-03-04 11:40-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 16:36Z",
-            "local": "2026-03-04 11:36-05:00"
-          },
-          "terminal": "3",
-          "gate": "A13",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KORD",
-            "iata": "ORD",
-            "name": "Chicago",
-            "countryCode": "us",
-            "timeZone": "America/Chicago"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 18:35Z",
-            "local": "2026-03-04 12:35-06:00"
-          },
-          "terminal": "3",
-          "quality": [
-            "Basic"
-          ]
-        },
-        "number": "BA 1715",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Embraer 170"
-        },
-        "airline": {
-          "name": "British",
-          "iata": "BA",
-          "icao": "BAW"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 16:40Z",
-            "local": "2026-03-04 11:40-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 16:36Z",
-            "local": "2026-03-04 11:36-05:00"
-          },
-          "terminal": "3",
-          "gate": "A13",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KORD",
-            "iata": "ORD",
-            "name": "Chicago",
-            "countryCode": "us",
-            "timeZone": "America/Chicago"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 18:35Z",
-            "local": "2026-03-04 12:35-06:00"
-          },
-          "terminal": "3",
-          "quality": [
-            "Basic"
-          ]
-        },
         "number": "AS 6216",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -1123,6 +1033,97 @@
           "name": "Porter",
           "iata": "PD",
           "icao": "POE"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 16:40Z",
+            "local": "2026-03-04 11:40-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 16:36Z",
+            "local": "2026-03-04 11:36-05:00"
+          },
+          "terminal": "3",
+          "gate": "A13",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KORD",
+            "iata": "ORD",
+            "name": "Chicago",
+            "countryCode": "us",
+            "timeZone": "America/Chicago"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 18:35Z",
+            "local": "2026-03-04 12:35-06:00"
+          },
+          "terminal": "3",
+          "quality": [
+            "Basic"
+          ]
+        },
+        "number": "BA 1715",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Embraer 170"
+        },
+        "airline": {
+          "name": "British",
+          "iata": "BA",
+          "icao": "BAW"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 16:15Z",
+            "local": "2026-03-04 11:15-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 16:36Z",
+            "local": "2026-03-04 11:36-05:00"
+          },
+          "terminal": "3",
+          "gate": "B40",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "TXKF",
+            "iata": "BDA",
+            "name": "Hamilton",
+            "countryCode": "bm",
+            "timeZone": "Atlantic/Bermuda"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 18:55Z",
+            "local": "2026-03-04 14:55-04:00"
+          },
+          "quality": [
+            "Basic"
+          ]
+        },
+        "number": "2T 602",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Embraer 190"
+        },
+        "airline": {
+          "name": "BermudAir"
         }
       },
       {
@@ -1604,10 +1605,10 @@
             "Live"
           ]
         },
-        "number": "OH 5020",
-        "callSign": "JIA5020",
+        "number": "AA 5020",
+        "callSign": "AAL5020",
         "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
+        "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
           "reg": "N588NN",
@@ -1615,9 +1616,9 @@
           "model": "Canadair CRJ 900"
         },
         "airline": {
-          "name": "PSA",
-          "iata": "OH",
-          "icao": "JIA"
+          "name": "American",
+          "iata": "AA",
+          "icao": "AAL"
         }
       },
       {
@@ -1667,10 +1668,10 @@
             "Live"
           ]
         },
-        "number": "AA 5020",
-        "callSign": "AAL5020",
+        "number": "OH 5020",
+        "callSign": "JIA5020",
         "status": "Departed",
-        "codeshareStatus": "IsOperator",
+        "codeshareStatus": "IsCodeshared",
         "isCargo": false,
         "aircraft": {
           "reg": "N588NN",
@@ -1678,9 +1679,9 @@
           "model": "Canadair CRJ 900"
         },
         "airline": {
-          "name": "American",
-          "iata": "AA",
-          "icao": "AAL"
+          "name": "PSA",
+          "iata": "OH",
+          "icao": "JIA"
         }
       },
       {
@@ -1983,10 +1984,10 @@
             "Live"
           ]
         },
-        "number": "AC 1933",
+        "number": "EK 5777",
         "callSign": "ACA1933",
         "status": "Departed",
-        "codeshareStatus": "IsOperator",
+        "codeshareStatus": "IsCodeshared",
         "isCargo": false,
         "aircraft": {
           "reg": "C-GBIJ",
@@ -1994,9 +1995,9 @@
           "model": "Airbus A319"
         },
         "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
+          "name": "Emirates",
+          "iata": "EK",
+          "icao": "UAE"
         }
       },
       {
@@ -2093,10 +2094,10 @@
             "Live"
           ]
         },
-        "number": "EY 3444",
+        "number": "AC 1933",
         "callSign": "ACA1933",
         "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
+        "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
           "reg": "C-GBIJ",
@@ -2104,9 +2105,9 @@
           "model": "Airbus A319"
         },
         "airline": {
-          "name": "Etihad",
-          "iata": "EY",
-          "icao": "ETD"
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
         }
       },
       {
@@ -2148,7 +2149,7 @@
             "Live"
           ]
         },
-        "number": "EK 5777",
+        "number": "EY 3444",
         "callSign": "ACA1933",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -2159,9 +2160,9 @@
           "model": "Airbus A319"
         },
         "airline": {
-          "name": "Emirates",
-          "iata": "EK",
-          "icao": "UAE"
+          "name": "Etihad",
+          "iata": "EY",
+          "icao": "ETD"
         }
       },
       {
@@ -2258,7 +2259,7 @@
             "Live"
           ]
         },
-        "number": "EY 3475",
+        "number": "EK 5820",
         "callSign": "ACA410",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -2269,9 +2270,9 @@
           "model": "Airbus A321"
         },
         "airline": {
-          "name": "Etihad",
-          "iata": "EY",
-          "icao": "ETD"
+          "name": "Emirates",
+          "iata": "EK",
+          "icao": "UAE"
         }
       },
       {
@@ -2313,7 +2314,7 @@
             "Live"
           ]
         },
-        "number": "EK 5820",
+        "number": "EY 3475",
         "callSign": "ACA410",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -2324,66 +2325,9 @@
           "model": "Airbus A321"
         },
         "airline": {
-          "name": "Emirates",
-          "iata": "EK",
-          "icao": "UAE"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:10Z",
-            "local": "2026-03-04 12:10-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 17:03Z",
-            "local": "2026-03-04 12:03-05:00"
-          },
-          "terminal": "1",
-          "gate": "D33",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYOW",
-            "iata": "YOW",
-            "name": "Ottawa",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 18:18Z",
-            "local": "2026-03-04 13:18-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:03Z",
-            "local": "2026-03-04 13:03-05:00"
-          },
-          "terminal": "D",
-          "gate": "17",
-          "baggageBelt": "4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "EK 5755",
-        "callSign": "ACA450",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GUPG",
-          "modeS": "C07B05",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "Emirates",
-          "iata": "EK",
-          "icao": "UAE"
+          "name": "Etihad",
+          "iata": "EY",
+          "icao": "ETD"
         }
       },
       {
@@ -2503,15 +2447,15 @@
       {
         "departure": {
           "scheduledTime": {
-            "utc": "2026-03-04 17:07Z",
-            "local": "2026-03-04 12:07-05:00"
+            "utc": "2026-03-04 17:10Z",
+            "local": "2026-03-04 12:10-05:00"
           },
           "revisedTime": {
-            "utc": "2026-03-04 17:04Z",
-            "local": "2026-03-04 12:04-05:00"
+            "utc": "2026-03-04 17:03Z",
+            "local": "2026-03-04 12:03-05:00"
           },
-          "terminal": "3",
-          "gate": "A6",
+          "terminal": "1",
+          "gate": "D33",
           "quality": [
             "Basic",
             "Live"
@@ -2519,45 +2463,42 @@
         },
         "arrival": {
           "airport": {
-            "icao": "KJFK",
-            "iata": "JFK",
-            "name": "New York",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
+            "icao": "CYOW",
+            "iata": "YOW",
+            "name": "Ottawa",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
           },
           "scheduledTime": {
-            "utc": "2026-03-04 18:59Z",
-            "local": "2026-03-04 13:59-05:00"
+            "utc": "2026-03-04 18:18Z",
+            "local": "2026-03-04 13:18-05:00"
           },
           "revisedTime": {
-            "utc": "2026-03-04 18:30Z",
-            "local": "2026-03-04 13:30-05:00"
+            "utc": "2026-03-04 18:03Z",
+            "local": "2026-03-04 13:03-05:00"
           },
-          "runwayTime": {
-            "utc": "2026-03-04 18:30Z",
-            "local": "2026-03-04 13:30-05:00"
-          },
-          "terminal": "4",
-          "runway": "04R",
+          "terminal": "D",
+          "gate": "17",
+          "baggageBelt": "4",
           "quality": [
             "Basic",
             "Live"
           ]
         },
-        "number": "SK 3511",
-        "callSign": "EDV5098",
+        "number": "EK 5755",
+        "callSign": "ACA450",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
         "isCargo": false,
         "aircraft": {
-          "reg": "N182GJ",
-          "modeS": "A148B9",
-          "model": "Canadair CRJ 900"
+          "reg": "C-GUPG",
+          "modeS": "C07B05",
+          "model": "Airbus A220-300"
         },
         "airline": {
-          "name": "SAS",
-          "iata": "SK",
-          "icao": "SAS"
+          "name": "Emirates",
+          "iata": "EK",
+          "icao": "UAE"
         }
       },
       {
@@ -2618,6 +2559,126 @@
           "name": "Delta Air Lines",
           "iata": "DL",
           "icao": "DAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 17:07Z",
+            "local": "2026-03-04 12:07-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 17:04Z",
+            "local": "2026-03-04 12:04-05:00"
+          },
+          "terminal": "3",
+          "gate": "A6",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KJFK",
+            "iata": "JFK",
+            "name": "New York",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 18:59Z",
+            "local": "2026-03-04 13:59-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:30Z",
+            "local": "2026-03-04 13:30-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 18:30Z",
+            "local": "2026-03-04 13:30-05:00"
+          },
+          "terminal": "4",
+          "runway": "04R",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "WS 6345",
+        "callSign": "EDV5098",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "N182GJ",
+          "modeS": "A148B9",
+          "model": "Canadair CRJ 900"
+        },
+        "airline": {
+          "name": "WestJet",
+          "iata": "WS",
+          "icao": "WJA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 17:07Z",
+            "local": "2026-03-04 12:07-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 17:04Z",
+            "local": "2026-03-04 12:04-05:00"
+          },
+          "terminal": "3",
+          "gate": "A6",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KJFK",
+            "iata": "JFK",
+            "name": "New York",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 18:59Z",
+            "local": "2026-03-04 13:59-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:30Z",
+            "local": "2026-03-04 13:30-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 18:30Z",
+            "local": "2026-03-04 13:30-05:00"
+          },
+          "terminal": "4",
+          "runway": "04R",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "SK 3511",
+        "callSign": "EDV5098",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "N182GJ",
+          "modeS": "A148B9",
+          "model": "Canadair CRJ 900"
+        },
+        "airline": {
+          "name": "SAS",
+          "iata": "SK",
+          "icao": "SAS"
         }
       },
       {
@@ -2844,6 +2905,66 @@
             "Live"
           ]
         },
+        "number": "AM 4751",
+        "callSign": "EDV5098",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "N182GJ",
+          "modeS": "A148B9",
+          "model": "Canadair CRJ 900"
+        },
+        "airline": {
+          "name": "Aeromexico",
+          "iata": "AM",
+          "icao": "AMX"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 17:07Z",
+            "local": "2026-03-04 12:07-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 17:04Z",
+            "local": "2026-03-04 12:04-05:00"
+          },
+          "terminal": "3",
+          "gate": "A6",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KJFK",
+            "iata": "JFK",
+            "name": "New York",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 18:59Z",
+            "local": "2026-03-04 13:59-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:30Z",
+            "local": "2026-03-04 13:30-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 18:30Z",
+            "local": "2026-03-04 13:30-05:00"
+          },
+          "terminal": "4",
+          "runway": "04R",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
         "number": "LA 6741",
         "callSign": "EDV5098",
         "status": "Departed",
@@ -2904,66 +3025,6 @@
             "Live"
           ]
         },
-        "number": "WS 6345",
-        "callSign": "EDV5098",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "N182GJ",
-          "modeS": "A148B9",
-          "model": "Canadair CRJ 900"
-        },
-        "airline": {
-          "name": "WestJet",
-          "iata": "WS",
-          "icao": "WJA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:07Z",
-            "local": "2026-03-04 12:07-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 17:04Z",
-            "local": "2026-03-04 12:04-05:00"
-          },
-          "terminal": "3",
-          "gate": "A6",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KJFK",
-            "iata": "JFK",
-            "name": "New York",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 18:59Z",
-            "local": "2026-03-04 13:59-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:30Z",
-            "local": "2026-03-04 13:30-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 18:30Z",
-            "local": "2026-03-04 13:30-05:00"
-          },
-          "terminal": "4",
-          "runway": "04R",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
         "number": "KL 5760",
         "callSign": "EDV5098",
         "status": "Departed",
@@ -2978,66 +3039,6 @@
           "name": "KLM",
           "iata": "KL",
           "icao": "KLM"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:07Z",
-            "local": "2026-03-04 12:07-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 17:04Z",
-            "local": "2026-03-04 12:04-05:00"
-          },
-          "terminal": "3",
-          "gate": "A6",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KJFK",
-            "iata": "JFK",
-            "name": "New York",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 18:59Z",
-            "local": "2026-03-04 13:59-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:30Z",
-            "local": "2026-03-04 13:30-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 18:30Z",
-            "local": "2026-03-04 13:30-05:00"
-          },
-          "terminal": "4",
-          "runway": "04R",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "AM 4751",
-        "callSign": "EDV5098",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "N182GJ",
-          "modeS": "A148B9",
-          "model": "Canadair CRJ 900"
-        },
-        "airline": {
-          "name": "Aeromexico",
-          "iata": "AM",
-          "icao": "AMX"
         }
       },
       {
@@ -3415,10 +3416,6 @@
             "utc": "2026-03-04 17:14Z",
             "local": "2026-03-04 12:14-05:00"
           },
-          "runwayTime": {
-            "utc": "2026-03-04 17:35Z",
-            "local": "2026-03-04 12:35-05:00"
-          },
           "terminal": "1",
           "gate": "F51",
           "quality": [
@@ -3454,20 +3451,18 @@
             "Live"
           ]
         },
-        "number": "AC 741",
+        "number": "UA 8702",
         "callSign": "ACA741",
         "status": "Departed",
-        "codeshareStatus": "IsOperator",
+        "codeshareStatus": "IsCodeshared",
         "isCargo": false,
         "aircraft": {
-          "reg": "C-FSOI",
-          "modeS": "C030FD",
-          "model": "Boeing 737"
+          "model": "Boeing 737 MAX 8"
         },
         "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
+          "name": "United",
+          "iata": "UA",
+          "icao": "UAL"
         }
       },
       {
@@ -3598,6 +3593,10 @@
             "utc": "2026-03-04 17:14Z",
             "local": "2026-03-04 12:14-05:00"
           },
+          "runwayTime": {
+            "utc": "2026-03-04 17:35Z",
+            "local": "2026-03-04 12:35-05:00"
+          },
           "terminal": "1",
           "gate": "F51",
           "quality": [
@@ -3633,77 +3632,20 @@
             "Live"
           ]
         },
-        "number": "UA 8702",
+        "number": "AC 741",
         "callSign": "ACA741",
         "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
+        "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
-          "model": "Boeing 737 MAX 8"
+          "reg": "C-FSOI",
+          "modeS": "C030FD",
+          "model": "Boeing 737"
         },
         "airline": {
-          "name": "United",
-          "iata": "UA",
-          "icao": "UAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:20Z",
-            "local": "2026-03-04 12:20-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 17:23Z",
-            "local": "2026-03-04 12:23-05:00"
-          },
-          "terminal": "3",
-          "gate": "A15",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KATL",
-            "iata": "ATL",
-            "name": "Atlanta",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 19:40Z",
-            "local": "2026-03-04 14:40-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:25Z",
-            "local": "2026-03-04 14:25-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 19:23Z",
-            "local": "2026-03-04 14:23-05:00"
-          },
-          "terminal": "I",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "WS 6479",
-        "callSign": "DAL2835",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "N352NW",
-          "modeS": "A3ED7C",
-          "model": "Airbus A320"
-        },
-        "airline": {
-          "name": "WestJet",
-          "iata": "WS",
-          "icao": "WJA"
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
         }
       },
       {
@@ -3763,6 +3705,65 @@
           "name": "KLM",
           "iata": "KL",
           "icao": "KLM"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 17:20Z",
+            "local": "2026-03-04 12:20-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 17:23Z",
+            "local": "2026-03-04 12:23-05:00"
+          },
+          "terminal": "3",
+          "gate": "A15",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KATL",
+            "iata": "ATL",
+            "name": "Atlanta",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 19:40Z",
+            "local": "2026-03-04 14:40-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:25Z",
+            "local": "2026-03-04 14:25-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 19:23Z",
+            "local": "2026-03-04 14:23-05:00"
+          },
+          "terminal": "I",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "LA 7964",
+        "callSign": "DAL2835",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "N352NW",
+          "modeS": "A3ED7C",
+          "model": "Airbus A320"
+        },
+        "airline": {
+          "name": "LATAM",
+          "iata": "LA",
+          "icao": "LAN"
         }
       },
       {
@@ -3931,7 +3932,7 @@
             "Live"
           ]
         },
-        "number": "LA 7964",
+        "number": "WS 6479",
         "callSign": "DAL2835",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -3942,9 +3943,9 @@
           "model": "Airbus A320"
         },
         "airline": {
-          "name": "LATAM",
-          "iata": "LA",
-          "icao": "LAN"
+          "name": "WestJet",
+          "iata": "WS",
+          "icao": "WJA"
         }
       },
       {
@@ -4016,58 +4017,6 @@
             "utc": "2026-03-04 17:27Z",
             "local": "2026-03-04 12:27-05:00"
           },
-          "terminal": "1",
-          "gate": "D32",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYEG",
-            "iata": "YEG",
-            "name": "Edmonton",
-            "countryCode": "ca",
-            "timeZone": "America/Edmonton"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 21:23Z",
-            "local": "2026-03-04 14:23-07:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 22:05Z",
-            "local": "2026-03-04 15:05-07:00"
-          },
-          "baggageBelt": "08",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "EK 5785",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Airbus A321"
-        },
-        "airline": {
-          "name": "Emirates",
-          "iata": "EK",
-          "icao": "UAE"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:00Z",
-            "local": "2026-03-04 12:00-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 17:27Z",
-            "local": "2026-03-04 12:27-05:00"
-          },
           "runwayTime": {
             "utc": "2026-03-04 17:46Z",
             "local": "2026-03-04 12:46-05:00"
@@ -4121,6 +4070,58 @@
       {
         "departure": {
           "scheduledTime": {
+            "utc": "2026-03-04 17:00Z",
+            "local": "2026-03-04 12:00-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 17:27Z",
+            "local": "2026-03-04 12:27-05:00"
+          },
+          "terminal": "1",
+          "gate": "D32",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYEG",
+            "iata": "YEG",
+            "name": "Edmonton",
+            "countryCode": "ca",
+            "timeZone": "America/Edmonton"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 21:23Z",
+            "local": "2026-03-04 14:23-07:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 22:05Z",
+            "local": "2026-03-04 15:05-07:00"
+          },
+          "baggageBelt": "08",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "EK 5785",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Airbus A321"
+        },
+        "airline": {
+          "name": "Emirates",
+          "iata": "EK",
+          "icao": "UAE"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
             "utc": "2026-03-04 17:30Z",
             "local": "2026-03-04 12:30-05:00"
           },
@@ -4164,6 +4165,134 @@
           "name": "WestJet",
           "iata": "WS",
           "icao": "WJA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 17:31Z",
+            "local": "2026-03-04 12:31-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 17:29Z",
+            "local": "2026-03-04 12:29-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 17:44Z",
+            "local": "2026-03-04 12:44-05:00"
+          },
+          "terminal": "3",
+          "gate": "A9",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KPHL",
+            "iata": "PHL",
+            "name": "Philadelphia",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 19:06Z",
+            "local": "2026-03-04 14:06-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:45Z",
+            "local": "2026-03-04 13:45-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 18:45Z",
+            "local": "2026-03-04 13:45-05:00"
+          },
+          "terminal": "F",
+          "runway": "09R",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "OH 5525",
+        "callSign": "JIA5525",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "N564NN",
+          "modeS": "A736FF",
+          "model": "Canadair CRJ 900"
+        },
+        "airline": {
+          "name": "PSA",
+          "iata": "OH",
+          "icao": "JIA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 17:31Z",
+            "local": "2026-03-04 12:31-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 17:29Z",
+            "local": "2026-03-04 12:29-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 17:44Z",
+            "local": "2026-03-04 12:44-05:00"
+          },
+          "terminal": "3",
+          "gate": "A9",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KPHL",
+            "iata": "PHL",
+            "name": "Philadelphia",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 19:06Z",
+            "local": "2026-03-04 14:06-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:45Z",
+            "local": "2026-03-04 13:45-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 18:45Z",
+            "local": "2026-03-04 13:45-05:00"
+          },
+          "terminal": "F",
+          "runway": "09R",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "AA 5525",
+        "callSign": "AAL5525",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "N564NN",
+          "modeS": "A736FF",
+          "model": "Canadair CRJ 900"
+        },
+        "airline": {
+          "name": "American",
+          "iata": "AA",
+          "icao": "AAL"
         }
       },
       {
@@ -4289,134 +4418,6 @@
       {
         "departure": {
           "scheduledTime": {
-            "utc": "2026-03-04 17:31Z",
-            "local": "2026-03-04 12:31-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 17:29Z",
-            "local": "2026-03-04 12:29-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 17:44Z",
-            "local": "2026-03-04 12:44-05:00"
-          },
-          "terminal": "3",
-          "gate": "A9",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KPHL",
-            "iata": "PHL",
-            "name": "Philadelphia",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 19:06Z",
-            "local": "2026-03-04 14:06-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:45Z",
-            "local": "2026-03-04 13:45-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 18:45Z",
-            "local": "2026-03-04 13:45-05:00"
-          },
-          "terminal": "F",
-          "runway": "09R",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "AA 5525",
-        "callSign": "AAL5525",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "N564NN",
-          "modeS": "A736FF",
-          "model": "Canadair CRJ 900"
-        },
-        "airline": {
-          "name": "American",
-          "iata": "AA",
-          "icao": "AAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:31Z",
-            "local": "2026-03-04 12:31-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 17:29Z",
-            "local": "2026-03-04 12:29-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 17:44Z",
-            "local": "2026-03-04 12:44-05:00"
-          },
-          "terminal": "3",
-          "gate": "A9",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KPHL",
-            "iata": "PHL",
-            "name": "Philadelphia",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 19:06Z",
-            "local": "2026-03-04 14:06-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:45Z",
-            "local": "2026-03-04 13:45-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 18:45Z",
-            "local": "2026-03-04 13:45-05:00"
-          },
-          "terminal": "F",
-          "runway": "09R",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "OH 5525",
-        "callSign": "JIA5525",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "N564NN",
-          "modeS": "A736FF",
-          "model": "Canadair CRJ 900"
-        },
-        "airline": {
-          "name": "PSA",
-          "iata": "OH",
-          "icao": "JIA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
             "utc": "2026-03-04 17:35Z",
             "local": "2026-03-04 12:35-05:00"
           },
@@ -4472,65 +4473,6 @@
           "name": "Porter",
           "iata": "PD",
           "icao": "POE"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:15Z",
-            "local": "2026-03-04 12:15-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 17:38Z",
-            "local": "2026-03-04 12:38-05:00"
-          },
-          "terminal": "3",
-          "gate": "A17",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KFLL",
-            "iata": "FLL",
-            "name": "Fort Lauderdale",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 20:37Z",
-            "local": "2026-03-04 15:37-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 20:37Z",
-            "local": "2026-03-04 15:37-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 20:37Z",
-            "local": "2026-03-04 15:37-05:00"
-          },
-          "terminal": "3",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "TS 7614",
-        "callSign": "POE507",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GKQQ",
-          "modeS": "C060C1",
-          "model": "Embraer 195"
-        },
-        "airline": {
-          "name": "Air Transat",
-          "iata": "TS",
-          "icao": "TSC"
         }
       },
       {
@@ -4659,6 +4601,65 @@
       {
         "departure": {
           "scheduledTime": {
+            "utc": "2026-03-04 17:15Z",
+            "local": "2026-03-04 12:15-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 17:38Z",
+            "local": "2026-03-04 12:38-05:00"
+          },
+          "terminal": "3",
+          "gate": "A17",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KFLL",
+            "iata": "FLL",
+            "name": "Fort Lauderdale",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 20:37Z",
+            "local": "2026-03-04 15:37-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 20:37Z",
+            "local": "2026-03-04 15:37-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 20:37Z",
+            "local": "2026-03-04 15:37-05:00"
+          },
+          "terminal": "3",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "TS 7614",
+        "callSign": "POE507",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GKQQ",
+          "modeS": "C060C1",
+          "model": "Embraer 195"
+        },
+        "airline": {
+          "name": "Air Transat",
+          "iata": "TS",
+          "icao": "TSC"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
             "utc": "2026-03-04 17:30Z",
             "local": "2026-03-04 12:30-05:00"
           },
@@ -4767,15 +4768,15 @@
       {
         "departure": {
           "scheduledTime": {
-            "utc": "2026-03-04 17:45Z",
-            "local": "2026-03-04 12:45-05:00"
+            "utc": "2026-03-04 17:50Z",
+            "local": "2026-03-04 12:50-05:00"
           },
           "revisedTime": {
             "utc": "2026-03-04 17:45Z",
             "local": "2026-03-04 12:45-05:00"
           },
-          "terminal": "1",
-          "gate": "F97",
+          "terminal": "3",
+          "gate": "B20",
           "quality": [
             "Basic",
             "Live"
@@ -4783,103 +4784,42 @@
         },
         "arrival": {
           "airport": {
-            "icao": "KEWR",
-            "iata": "EWR",
-            "name": "Newark",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
+            "icao": "CYVR",
+            "iata": "YVR",
+            "name": "Vancouver",
+            "countryCode": "ca",
+            "timeZone": "America/Vancouver"
           },
           "scheduledTime": {
-            "utc": "2026-03-04 19:31Z",
-            "local": "2026-03-04 14:31-05:00"
+            "utc": "2026-03-04 23:09Z",
+            "local": "2026-03-04 15:09-08:00"
           },
           "revisedTime": {
-            "utc": "2026-03-04 19:12Z",
-            "local": "2026-03-04 14:12-05:00"
+            "utc": "2026-03-04 22:57Z",
+            "local": "2026-03-04 14:57-08:00"
           },
-          "runwayTime": {
-            "utc": "2026-03-04 19:12Z",
-            "local": "2026-03-04 14:12-05:00"
-          },
-          "terminal": "C",
+          "terminal": "M",
+          "gate": "B26",
+          "baggageBelt": "3",
           "quality": [
             "Basic",
             "Live"
           ]
         },
-        "number": "AC 3673",
-        "callSign": "RPA3649",
+        "number": "TS 7906",
+        "callSign": "POE307",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
         "isCargo": false,
         "aircraft": {
-          "reg": "N779YX",
-          "modeS": "AA8CB2",
-          "model": "Embraer 175"
+          "reg": "C-GKXR",
+          "modeS": "C06178",
+          "model": "Embraer 195-E2"
         },
         "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:45Z",
-            "local": "2026-03-04 12:45-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 17:45Z",
-            "local": "2026-03-04 12:45-05:00"
-          },
-          "terminal": "1",
-          "gate": "F97",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KEWR",
-            "iata": "EWR",
-            "name": "Newark",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 19:31Z",
-            "local": "2026-03-04 14:31-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:12Z",
-            "local": "2026-03-04 14:12-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 19:12Z",
-            "local": "2026-03-04 14:12-05:00"
-          },
-          "terminal": "C",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "UA 3649",
-        "callSign": "UAL3649",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "N779YX",
-          "modeS": "AA8CB2",
-          "model": "Embraer 175"
-        },
-        "airline": {
-          "name": "United",
-          "iata": "UA",
-          "icao": "UAL"
+          "name": "Air Transat",
+          "iata": "TS",
+          "icao": "TSC"
         }
       },
       {
@@ -4980,63 +4920,6 @@
             "Live"
           ]
         },
-        "number": "TS 7906",
-        "callSign": "POE307",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GKXR",
-          "modeS": "C06178",
-          "model": "Embraer 195-E2"
-        },
-        "airline": {
-          "name": "Air Transat",
-          "iata": "TS",
-          "icao": "TSC"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:50Z",
-            "local": "2026-03-04 12:50-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 17:45Z",
-            "local": "2026-03-04 12:45-05:00"
-          },
-          "terminal": "3",
-          "gate": "B20",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYVR",
-            "iata": "YVR",
-            "name": "Vancouver",
-            "countryCode": "ca",
-            "timeZone": "America/Vancouver"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 23:09Z",
-            "local": "2026-03-04 15:09-08:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 22:57Z",
-            "local": "2026-03-04 14:57-08:00"
-          },
-          "terminal": "M",
-          "gate": "B26",
-          "baggageBelt": "3",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
         "number": "AA 9128",
         "callSign": "POE307",
         "status": "Departed",
@@ -5051,6 +4934,124 @@
           "name": "American",
           "iata": "AA",
           "icao": "AAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 17:45Z",
+            "local": "2026-03-04 12:45-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 17:45Z",
+            "local": "2026-03-04 12:45-05:00"
+          },
+          "terminal": "1",
+          "gate": "F97",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KEWR",
+            "iata": "EWR",
+            "name": "Newark",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 19:31Z",
+            "local": "2026-03-04 14:31-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:12Z",
+            "local": "2026-03-04 14:12-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 19:12Z",
+            "local": "2026-03-04 14:12-05:00"
+          },
+          "terminal": "C",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "UA 3649",
+        "callSign": "UAL3649",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "N779YX",
+          "modeS": "AA8CB2",
+          "model": "Embraer 175"
+        },
+        "airline": {
+          "name": "United",
+          "iata": "UA",
+          "icao": "UAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 17:45Z",
+            "local": "2026-03-04 12:45-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 17:45Z",
+            "local": "2026-03-04 12:45-05:00"
+          },
+          "terminal": "1",
+          "gate": "F97",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KEWR",
+            "iata": "EWR",
+            "name": "Newark",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 19:31Z",
+            "local": "2026-03-04 14:31-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:12Z",
+            "local": "2026-03-04 14:12-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 19:12Z",
+            "local": "2026-03-04 14:12-05:00"
+          },
+          "terminal": "C",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "AC 3673",
+        "callSign": "RPA3649",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "N779YX",
+          "modeS": "AA8CB2",
+          "model": "Embraer 175"
+        },
+        "airline": {
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
         }
       },
       {
@@ -5384,6 +5385,65 @@
             "Live"
           ]
         },
+        "number": "VS 1836",
+        "callSign": "EDV4978",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "N669CA",
+          "modeS": "A8D5DB",
+          "model": "Canadair CRJ 700"
+        },
+        "airline": {
+          "name": "Virgin Atlantic",
+          "iata": "VS",
+          "icao": "VIR"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 17:11Z",
+            "local": "2026-03-04 12:11-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 17:51Z",
+            "local": "2026-03-04 12:51-05:00"
+          },
+          "terminal": "3",
+          "gate": "A6",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KDTW",
+            "iata": "DTW",
+            "name": "Detroit",
+            "countryCode": "us",
+            "timeZone": "America/Detroit"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 18:30Z",
+            "local": "2026-03-04 13:30-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:00Z",
+            "local": "2026-03-04 14:00-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 19:00Z",
+            "local": "2026-03-04 14:00-05:00"
+          },
+          "terminal": "M",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
         "number": "KL 6539",
         "callSign": "EDV4978",
         "status": "Departed",
@@ -5502,65 +5562,6 @@
             "Live"
           ]
         },
-        "number": "VS 1836",
-        "callSign": "EDV4978",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "N669CA",
-          "modeS": "A8D5DB",
-          "model": "Canadair CRJ 700"
-        },
-        "airline": {
-          "name": "Virgin Atlantic",
-          "iata": "VS",
-          "icao": "VIR"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:11Z",
-            "local": "2026-03-04 12:11-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 17:51Z",
-            "local": "2026-03-04 12:51-05:00"
-          },
-          "terminal": "3",
-          "gate": "A6",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KDTW",
-            "iata": "DTW",
-            "name": "Detroit",
-            "countryCode": "us",
-            "timeZone": "America/Detroit"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 18:30Z",
-            "local": "2026-03-04 13:30-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:00Z",
-            "local": "2026-03-04 14:00-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 19:00Z",
-            "local": "2026-03-04 14:00-05:00"
-          },
-          "terminal": "M",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
         "number": "AF 2715",
         "callSign": "EDV4978",
         "status": "Departed",
@@ -5614,45 +5615,6 @@
           "name": "Air Transat",
           "iata": "TS",
           "icao": "TSC"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:56Z",
-            "local": "2026-03-04 12:56-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 17:56Z",
-            "local": "2026-03-04 12:56-05:00"
-          },
-          "quality": [
-            "Basic"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KTEB",
-            "iata": "TEB",
-            "name": "Teterboro",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "quality": []
-        },
-        "number": "VJT 749",
-        "callSign": "VJT749",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "9H-VIC",
-          "modeS": "4D22F7",
-          "model": "GL7T"
-        },
-        "airline": {
-          "name": "VistaJet",
-          "icao": "VJT"
         }
       },
       {
@@ -5720,56 +5682,40 @@
       {
         "departure": {
           "scheduledTime": {
-            "utc": "2026-03-04 18:00Z",
-            "local": "2026-03-04 13:00-05:00"
+            "utc": "2026-03-04 17:56Z",
+            "local": "2026-03-04 12:56-05:00"
           },
-          "revisedTime": {
-            "utc": "2026-03-04 18:00Z",
-            "local": "2026-03-04 13:00-05:00"
+          "runwayTime": {
+            "utc": "2026-03-04 17:56Z",
+            "local": "2026-03-04 12:56-05:00"
           },
-          "terminal": "1",
-          "gate": "D24",
           "quality": [
-            "Basic",
-            "Live"
+            "Basic"
           ]
         },
         "arrival": {
           "airport": {
-            "icao": "CYUL",
-            "iata": "YUL",
-            "name": "Montreal",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
+            "icao": "KTEB",
+            "iata": "TEB",
+            "name": "Teterboro",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
           },
-          "scheduledTime": {
-            "utc": "2026-03-04 19:22Z",
-            "local": "2026-03-04 14:22-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:07Z",
-            "local": "2026-03-04 14:07-05:00"
-          },
-          "gate": "47",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
+          "quality": []
         },
-        "number": "AC 412",
-        "callSign": "ACA412",
+        "number": "VJT 749",
+        "callSign": "VJT749",
         "status": "Departed",
         "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
-          "reg": "C-GKOD",
-          "modeS": "C06080",
-          "model": "Airbus A320"
+          "reg": "9H-VIC",
+          "modeS": "4D22F7",
+          "model": "GL7T"
         },
         "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
+          "name": "VistaJet",
+          "icao": "VJT"
         }
       },
       {
@@ -5825,6 +5771,155 @@
           "name": "Etihad",
           "iata": "EY",
           "icao": "ETD"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 18:00Z",
+            "local": "2026-03-04 13:00-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:00Z",
+            "local": "2026-03-04 13:00-05:00"
+          },
+          "terminal": "1",
+          "gate": "D24",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYUL",
+            "iata": "YUL",
+            "name": "Montreal",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 19:22Z",
+            "local": "2026-03-04 14:22-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:07Z",
+            "local": "2026-03-04 14:07-05:00"
+          },
+          "gate": "47",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "AC 412",
+        "callSign": "ACA412",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GKOD",
+          "modeS": "C06080",
+          "model": "Airbus A320"
+        },
+        "airline": {
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 18:10Z",
+            "local": "2026-03-04 13:10-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:06Z",
+            "local": "2026-03-04 13:06-05:00"
+          },
+          "terminal": "3",
+          "gate": "A7",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KORD",
+            "iata": "ORD",
+            "name": "Chicago",
+            "countryCode": "us",
+            "timeZone": "America/Chicago"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 20:10Z",
+            "local": "2026-03-04 14:10-06:00"
+          },
+          "terminal": "3",
+          "quality": [
+            "Basic"
+          ]
+        },
+        "number": "BA 4921",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Embraer 170"
+        },
+        "airline": {
+          "name": "British",
+          "iata": "BA",
+          "icao": "BAW"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 18:10Z",
+            "local": "2026-03-04 13:10-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:06Z",
+            "local": "2026-03-04 13:06-05:00"
+          },
+          "terminal": "3",
+          "gate": "A7",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KORD",
+            "iata": "ORD",
+            "name": "Chicago",
+            "countryCode": "us",
+            "timeZone": "America/Chicago"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 20:10Z",
+            "local": "2026-03-04 14:10-06:00"
+          },
+          "terminal": "3",
+          "quality": [
+            "Basic"
+          ]
+        },
+        "number": "RJ 7695",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Embraer 170"
+        },
+        "airline": {
+          "name": "Royal Jordanian",
+          "iata": "RJ",
+          "icao": "RJA"
         }
       },
       {
@@ -5908,7 +6003,7 @@
             "Basic"
           ]
         },
-        "number": "RJ 7695",
+        "number": "QR 9278",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
         "isCargo": false,
@@ -5916,9 +6011,56 @@
           "model": "Embraer 170"
         },
         "airline": {
-          "name": "Royal Jordanian",
-          "iata": "RJ",
-          "icao": "RJA"
+          "name": "Qatar",
+          "iata": "QR",
+          "icao": "QTR"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 18:10Z",
+            "local": "2026-03-04 13:10-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:06Z",
+            "local": "2026-03-04 13:06-05:00"
+          },
+          "terminal": "3",
+          "gate": "A7",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KORD",
+            "iata": "ORD",
+            "name": "Chicago",
+            "countryCode": "us",
+            "timeZone": "America/Chicago"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 20:10Z",
+            "local": "2026-03-04 14:10-06:00"
+          },
+          "terminal": "3",
+          "quality": [
+            "Basic"
+          ]
+        },
+        "number": "IB 4246",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Embraer 170"
+        },
+        "airline": {
+          "name": "Iberia",
+          "iata": "IB",
+          "icao": "IBE"
         }
       },
       {
@@ -6049,53 +6191,6 @@
             "Basic"
           ]
         },
-        "number": "QR 9278",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Embraer 170"
-        },
-        "airline": {
-          "name": "Qatar",
-          "iata": "QR",
-          "icao": "QTR"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 18:10Z",
-            "local": "2026-03-04 13:10-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:06Z",
-            "local": "2026-03-04 13:06-05:00"
-          },
-          "terminal": "3",
-          "gate": "A7",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KORD",
-            "iata": "ORD",
-            "name": "Chicago",
-            "countryCode": "us",
-            "timeZone": "America/Chicago"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 20:10Z",
-            "local": "2026-03-04 14:10-06:00"
-          },
-          "terminal": "3",
-          "quality": [
-            "Basic"
-          ]
-        },
         "number": "PD 6065",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -6107,158 +6202,6 @@
           "name": "Porter",
           "iata": "PD",
           "icao": "POE"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 18:10Z",
-            "local": "2026-03-04 13:10-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:06Z",
-            "local": "2026-03-04 13:06-05:00"
-          },
-          "terminal": "3",
-          "gate": "A7",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KORD",
-            "iata": "ORD",
-            "name": "Chicago",
-            "countryCode": "us",
-            "timeZone": "America/Chicago"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 20:10Z",
-            "local": "2026-03-04 14:10-06:00"
-          },
-          "terminal": "3",
-          "quality": [
-            "Basic"
-          ]
-        },
-        "number": "IB 4246",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Embraer 170"
-        },
-        "airline": {
-          "name": "Iberia",
-          "iata": "IB",
-          "icao": "IBE"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 18:10Z",
-            "local": "2026-03-04 13:10-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:06Z",
-            "local": "2026-03-04 13:06-05:00"
-          },
-          "terminal": "3",
-          "gate": "A7",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KORD",
-            "iata": "ORD",
-            "name": "Chicago",
-            "countryCode": "us",
-            "timeZone": "America/Chicago"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 20:10Z",
-            "local": "2026-03-04 14:10-06:00"
-          },
-          "terminal": "3",
-          "quality": [
-            "Basic"
-          ]
-        },
-        "number": "BA 4921",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Embraer 170"
-        },
-        "airline": {
-          "name": "British",
-          "iata": "BA",
-          "icao": "BAW"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 18:10Z",
-            "local": "2026-03-04 13:10-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:10Z",
-            "local": "2026-03-04 13:10-05:00"
-          },
-          "terminal": "1",
-          "gate": "E77",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "RKSI",
-            "iata": "ICN",
-            "name": "Seoul",
-            "countryCode": "kr",
-            "timeZone": "Asia/Seoul"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-05 09:25Z",
-            "local": "2026-03-05 18:25+09:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-05 08:54Z",
-            "local": "2026-03-05 17:54+09:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-05 08:54Z",
-            "local": "2026-03-05 17:54+09:00"
-          },
-          "terminal": "1",
-          "gate": "8",
-          "baggageBelt": "4",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "OZ 6113",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Boeing 787-9"
-        },
-        "airline": {
-          "name": "Asiana",
-          "iata": "OZ",
-          "icao": "AAR"
         }
       },
       {
@@ -6325,6 +6268,64 @@
           "name": "Air Canada",
           "iata": "AC",
           "icao": "ACA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 18:10Z",
+            "local": "2026-03-04 13:10-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:10Z",
+            "local": "2026-03-04 13:10-05:00"
+          },
+          "terminal": "1",
+          "gate": "E77",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "RKSI",
+            "iata": "ICN",
+            "name": "Seoul",
+            "countryCode": "kr",
+            "timeZone": "Asia/Seoul"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-05 09:25Z",
+            "local": "2026-03-05 18:25+09:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 08:54Z",
+            "local": "2026-03-05 17:54+09:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-05 08:54Z",
+            "local": "2026-03-05 17:54+09:00"
+          },
+          "terminal": "1",
+          "gate": "8",
+          "baggageBelt": "4",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "OZ 6113",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Boeing 787-9"
+        },
+        "airline": {
+          "name": "Asiana",
+          "iata": "OZ",
+          "icao": "AAR"
         }
       },
       {
@@ -6426,7 +6427,7 @@
             "Live"
           ]
         },
-        "number": "AA 9103",
+        "number": "TS 7944",
         "callSign": "POE405",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -6437,9 +6438,9 @@
           "model": "E295"
         },
         "airline": {
-          "name": "American",
-          "iata": "AA",
-          "icao": "AAL"
+          "name": "Air Transat",
+          "iata": "TS",
+          "icao": "TSC"
         }
       },
       {
@@ -6481,7 +6482,7 @@
             "Live"
           ]
         },
-        "number": "TS 7944",
+        "number": "AA 9103",
         "callSign": "POE405",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -6492,9 +6493,9 @@
           "model": "E295"
         },
         "airline": {
-          "name": "Air Transat",
-          "iata": "TS",
-          "icao": "TSC"
+          "name": "American",
+          "iata": "AA",
+          "icao": "AAL"
         }
       },
       {
@@ -6750,71 +6751,6 @@
             "utc": "2026-03-04 18:16Z",
             "local": "2026-03-04 13:16-05:00"
           },
-          "runwayTime": {
-            "utc": "2026-03-04 18:39Z",
-            "local": "2026-03-04 13:39-05:00"
-          },
-          "terminal": "1",
-          "gate": "F53",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KSFO",
-            "iata": "SFO",
-            "name": "San Francisco",
-            "countryCode": "us",
-            "timeZone": "America/Los_Angeles"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 23:30Z",
-            "local": "2026-03-04 15:30-08:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 23:51Z",
-            "local": "2026-03-04 15:51-08:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 23:46Z",
-            "local": "2026-03-04 15:46-08:00"
-          },
-          "terminal": "2",
-          "gate": "C10",
-          "baggageBelt": "1",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "AC 743",
-        "callSign": "ACA743",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GVDQ",
-          "modeS": "C07C7B",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:45Z",
-            "local": "2026-03-04 12:45-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:16Z",
-            "local": "2026-03-04 13:16-05:00"
-          },
           "terminal": "1",
           "gate": "F53",
           "quality": [
@@ -6921,6 +6857,71 @@
           "name": "United",
           "iata": "UA",
           "icao": "UAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 17:45Z",
+            "local": "2026-03-04 12:45-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:16Z",
+            "local": "2026-03-04 13:16-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 18:39Z",
+            "local": "2026-03-04 13:39-05:00"
+          },
+          "terminal": "1",
+          "gate": "F53",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KSFO",
+            "iata": "SFO",
+            "name": "San Francisco",
+            "countryCode": "us",
+            "timeZone": "America/Los_Angeles"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 23:30Z",
+            "local": "2026-03-04 15:30-08:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 23:51Z",
+            "local": "2026-03-04 15:51-08:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 23:46Z",
+            "local": "2026-03-04 15:46-08:00"
+          },
+          "terminal": "2",
+          "gate": "C10",
+          "baggageBelt": "1",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "AC 743",
+        "callSign": "ACA743",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GVDQ",
+          "modeS": "C07C7B",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
         }
       },
       {
@@ -7068,7 +7069,7 @@
             "Live"
           ]
         },
-        "number": "EY 3462",
+        "number": "AV 6986",
         "callSign": "ACA610",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -7079,9 +7080,9 @@
           "model": "Airbus A220-300"
         },
         "airline": {
-          "name": "Etihad",
-          "iata": "EY",
-          "icao": "ETD"
+          "name": "Avianca",
+          "iata": "AV",
+          "icao": "AVA"
         }
       },
       {
@@ -7123,7 +7124,7 @@
             "Live"
           ]
         },
-        "number": "EK 5753",
+        "number": "EY 3462",
         "callSign": "ACA610",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -7134,9 +7135,9 @@
           "model": "Airbus A220-300"
         },
         "airline": {
-          "name": "Emirates",
-          "iata": "EK",
-          "icao": "UAE"
+          "name": "Etihad",
+          "iata": "EY",
+          "icao": "ETD"
         }
       },
       {
@@ -7238,7 +7239,7 @@
             "Live"
           ]
         },
-        "number": "AV 6986",
+        "number": "UA 8710",
         "callSign": "ACA610",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -7249,9 +7250,9 @@
           "model": "Airbus A220-300"
         },
         "airline": {
-          "name": "Avianca",
-          "iata": "AV",
-          "icao": "AVA"
+          "name": "United",
+          "iata": "UA",
+          "icao": "UAL"
         }
       },
       {
@@ -7293,7 +7294,7 @@
             "Live"
           ]
         },
-        "number": "UA 8710",
+        "number": "EK 5753",
         "callSign": "ACA610",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -7304,9 +7305,9 @@
           "model": "Airbus A220-300"
         },
         "airline": {
-          "name": "United",
-          "iata": "UA",
-          "icao": "UAL"
+          "name": "Emirates",
+          "iata": "EK",
+          "icao": "UAE"
         }
       },
       {
@@ -7585,7 +7586,7 @@
             "Live"
           ]
         },
-        "number": "AM 7182",
+        "number": "DL 7174",
         "callSign": "WJA641",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -7596,9 +7597,65 @@
           "model": "Boeing 737-700"
         },
         "airline": {
-          "name": "Aeromexico",
-          "iata": "AM",
-          "icao": "AMX"
+          "name": "Delta Air Lines",
+          "iata": "DL",
+          "icao": "DAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 18:30Z",
+            "local": "2026-03-04 13:30-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:56Z",
+            "local": "2026-03-04 13:56-05:00"
+          },
+          "terminal": "3",
+          "gate": "C31",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYYC",
+            "iata": "YYC",
+            "name": "Calgary",
+            "countryCode": "ca",
+            "timeZone": "America/Edmonton"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 22:58Z",
+            "local": "2026-03-04 15:58-07:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 23:25Z",
+            "local": "2026-03-04 16:25-07:00"
+          },
+          "terminal": "D",
+          "gate": "C53",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "QF 3603",
+        "callSign": "WJA641",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FWCN",
+          "modeS": "C03A5A",
+          "model": "Boeing 737-700"
+        },
+        "airline": {
+          "name": "Qantas",
+          "iata": "QF",
+          "icao": "QFA"
         }
       },
       {
@@ -7697,7 +7754,7 @@
             "Live"
           ]
         },
-        "number": "DL 7174",
+        "number": "AM 7182",
         "callSign": "WJA641",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -7708,9 +7765,9 @@
           "model": "Boeing 737-700"
         },
         "airline": {
-          "name": "Delta Air Lines",
-          "iata": "DL",
-          "icao": "DAL"
+          "name": "Aeromexico",
+          "iata": "AM",
+          "icao": "AMX"
         }
       },
       {
@@ -7832,62 +7889,6 @@
       {
         "departure": {
           "scheduledTime": {
-            "utc": "2026-03-04 18:30Z",
-            "local": "2026-03-04 13:30-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:56Z",
-            "local": "2026-03-04 13:56-05:00"
-          },
-          "terminal": "3",
-          "gate": "C31",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYYC",
-            "iata": "YYC",
-            "name": "Calgary",
-            "countryCode": "ca",
-            "timeZone": "America/Edmonton"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 22:58Z",
-            "local": "2026-03-04 15:58-07:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 23:25Z",
-            "local": "2026-03-04 16:25-07:00"
-          },
-          "terminal": "D",
-          "gate": "C53",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "QF 3603",
-        "callSign": "WJA641",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FWCN",
-          "modeS": "C03A5A",
-          "model": "Boeing 737-700"
-        },
-        "airline": {
-          "name": "Qantas",
-          "iata": "QF",
-          "icao": "QFA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
             "utc": "2026-03-04 19:00Z",
             "local": "2026-03-04 14:00-05:00"
           },
@@ -7981,6 +7982,98 @@
             "Basic"
           ]
         },
+        "number": "QR 2423",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Embraer 175"
+        },
+        "airline": {
+          "name": "Qatar",
+          "iata": "QR",
+          "icao": "QTR"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:00Z",
+            "local": "2026-03-04 14:00-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:57Z",
+            "local": "2026-03-04 13:57-05:00"
+          },
+          "terminal": "3",
+          "gate": "A12",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KDFW",
+            "iata": "DFW",
+            "name": "Dallas-Fort Worth",
+            "countryCode": "us",
+            "timeZone": "America/Chicago"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 22:53Z",
+            "local": "2026-03-04 16:53-06:00"
+          },
+          "quality": [
+            "Basic"
+          ]
+        },
+        "number": "AS 6771",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Embraer 175"
+        },
+        "airline": {
+          "name": "Alaska",
+          "iata": "AS",
+          "icao": "ASA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:00Z",
+            "local": "2026-03-04 14:00-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:57Z",
+            "local": "2026-03-04 13:57-05:00"
+          },
+          "terminal": "3",
+          "gate": "A12",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KDFW",
+            "iata": "DFW",
+            "name": "Dallas-Fort Worth",
+            "countryCode": "us",
+            "timeZone": "America/Chicago"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 22:53Z",
+            "local": "2026-03-04 16:53-06:00"
+          },
+          "quality": [
+            "Basic"
+          ]
+        },
         "number": "PD 6059",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -7992,6 +8085,52 @@
           "name": "Porter",
           "iata": "PD",
           "icao": "POE"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:00Z",
+            "local": "2026-03-04 14:00-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:57Z",
+            "local": "2026-03-04 13:57-05:00"
+          },
+          "terminal": "3",
+          "gate": "A12",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KDFW",
+            "iata": "DFW",
+            "name": "Dallas-Fort Worth",
+            "countryCode": "us",
+            "timeZone": "America/Chicago"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 22:53Z",
+            "local": "2026-03-04 16:53-06:00"
+          },
+          "quality": [
+            "Basic"
+          ]
+        },
+        "number": "AA 3993",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Embraer 175"
+        },
+        "airline": {
+          "name": "American",
+          "iata": "AA",
+          "icao": "AAL"
         }
       },
       {
@@ -8084,144 +8223,6 @@
           "name": "Gol",
           "iata": "G3",
           "icao": "GLO"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:00Z",
-            "local": "2026-03-04 14:00-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:57Z",
-            "local": "2026-03-04 13:57-05:00"
-          },
-          "terminal": "3",
-          "gate": "A12",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KDFW",
-            "iata": "DFW",
-            "name": "Dallas-Fort Worth",
-            "countryCode": "us",
-            "timeZone": "America/Chicago"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 22:53Z",
-            "local": "2026-03-04 16:53-06:00"
-          },
-          "quality": [
-            "Basic"
-          ]
-        },
-        "number": "AA 3993",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Embraer 175"
-        },
-        "airline": {
-          "name": "American",
-          "iata": "AA",
-          "icao": "AAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:00Z",
-            "local": "2026-03-04 14:00-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:57Z",
-            "local": "2026-03-04 13:57-05:00"
-          },
-          "terminal": "3",
-          "gate": "A12",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KDFW",
-            "iata": "DFW",
-            "name": "Dallas-Fort Worth",
-            "countryCode": "us",
-            "timeZone": "America/Chicago"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 22:53Z",
-            "local": "2026-03-04 16:53-06:00"
-          },
-          "quality": [
-            "Basic"
-          ]
-        },
-        "number": "QR 2423",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Embraer 175"
-        },
-        "airline": {
-          "name": "Qatar",
-          "iata": "QR",
-          "icao": "QTR"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:00Z",
-            "local": "2026-03-04 14:00-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:57Z",
-            "local": "2026-03-04 13:57-05:00"
-          },
-          "terminal": "3",
-          "gate": "A12",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KDFW",
-            "iata": "DFW",
-            "name": "Dallas-Fort Worth",
-            "countryCode": "us",
-            "timeZone": "America/Chicago"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 22:53Z",
-            "local": "2026-03-04 16:53-06:00"
-          },
-          "quality": [
-            "Basic"
-          ]
-        },
-        "number": "AS 6771",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "model": "Embraer 175"
-        },
-        "airline": {
-          "name": "Alaska",
-          "iata": "AS",
-          "icao": "ASA"
         }
       },
       {
@@ -8360,213 +8361,6 @@
             "utc": "2026-03-04 18:59Z",
             "local": "2026-03-04 13:59-05:00"
           },
-          "runwayTime": {
-            "utc": "2026-03-04 19:18Z",
-            "local": "2026-03-04 14:18-05:00"
-          },
-          "terminal": "1",
-          "gate": "D26",
-          "runway": "05",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYQM",
-            "iata": "YQM",
-            "name": "Moncton",
-            "countryCode": "ca",
-            "timeZone": "America/Moncton"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 21:03Z",
-            "local": "2026-03-04 17:03-04:00"
-          },
-          "quality": [
-            "Basic"
-          ]
-        },
-        "number": "AC 646",
-        "callSign": "ACA646",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FHMO",
-          "modeS": "C013C3",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:00Z",
-            "local": "2026-03-04 14:00-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:59Z",
-            "local": "2026-03-04 13:59-05:00"
-          },
-          "terminal": "1",
-          "gate": "D26",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYQM",
-            "iata": "YQM",
-            "name": "Moncton",
-            "countryCode": "ca",
-            "timeZone": "America/Moncton"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 21:03Z",
-            "local": "2026-03-04 17:03-04:00"
-          },
-          "quality": [
-            "Basic"
-          ]
-        },
-        "number": "UA 8393",
-        "callSign": "ACA646",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FHMO",
-          "modeS": "C013C3",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "United",
-          "iata": "UA",
-          "icao": "UAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:00Z",
-            "local": "2026-03-04 14:00-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:59Z",
-            "local": "2026-03-04 13:59-05:00"
-          },
-          "terminal": "1",
-          "gate": "D26",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYQM",
-            "iata": "YQM",
-            "name": "Moncton",
-            "countryCode": "ca",
-            "timeZone": "America/Moncton"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 21:03Z",
-            "local": "2026-03-04 17:03-04:00"
-          },
-          "quality": [
-            "Basic"
-          ]
-        },
-        "number": "EK 5759",
-        "callSign": "ACA646",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FHMO",
-          "modeS": "C013C3",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "Emirates",
-          "iata": "EK",
-          "icao": "UAE"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:00Z",
-            "local": "2026-03-04 14:00-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:59Z",
-            "local": "2026-03-04 13:59-05:00"
-          },
-          "terminal": "1",
-          "gate": "D20",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYUL",
-            "iata": "YUL",
-            "name": "Montreal",
-            "countryCode": "ca",
-            "timeZone": "America/Toronto"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 20:23Z",
-            "local": "2026-03-04 15:23-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 20:09Z",
-            "local": "2026-03-04 15:09-05:00"
-          },
-          "gate": "5",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "OS 8332",
-        "callSign": "ACA414",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FHOY",
-          "modeS": "C01401",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "Austrian",
-          "iata": "OS",
-          "icao": "AUA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:00Z",
-            "local": "2026-03-04 14:00-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 18:59Z",
-            "local": "2026-03-04 13:59-05:00"
-          },
           "terminal": "1",
           "gate": "D20",
           "quality": [
@@ -8651,7 +8445,7 @@
             "Live"
           ]
         },
-        "number": "LX 4655",
+        "number": "OS 8332",
         "callSign": "ACA414",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -8662,9 +8456,9 @@
           "model": "Airbus A220-300"
         },
         "airline": {
-          "name": "SWISS",
-          "iata": "LX",
-          "icao": "SWR"
+          "name": "Austrian",
+          "iata": "OS",
+          "icao": "AUA"
         }
       },
       {
@@ -8784,15 +8578,168 @@
             "local": "2026-03-04 14:00-05:00"
           },
           "revisedTime": {
-            "utc": "2026-03-04 19:06Z",
-            "local": "2026-03-04 14:06-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 19:22Z",
-            "local": "2026-03-04 14:22-05:00"
+            "utc": "2026-03-04 18:59Z",
+            "local": "2026-03-04 13:59-05:00"
           },
           "terminal": "1",
-          "gate": "F62",
+          "gate": "D20",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYUL",
+            "iata": "YUL",
+            "name": "Montreal",
+            "countryCode": "ca",
+            "timeZone": "America/Toronto"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 20:23Z",
+            "local": "2026-03-04 15:23-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 20:09Z",
+            "local": "2026-03-04 15:09-05:00"
+          },
+          "gate": "5",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "LX 4655",
+        "callSign": "ACA414",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FHOY",
+          "modeS": "C01401",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "SWISS",
+          "iata": "LX",
+          "icao": "SWR"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:00Z",
+            "local": "2026-03-04 14:00-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:59Z",
+            "local": "2026-03-04 13:59-05:00"
+          },
+          "terminal": "1",
+          "gate": "D26",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYQM",
+            "iata": "YQM",
+            "name": "Moncton",
+            "countryCode": "ca",
+            "timeZone": "America/Moncton"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 21:03Z",
+            "local": "2026-03-04 17:03-04:00"
+          },
+          "quality": [
+            "Basic"
+          ]
+        },
+        "number": "UA 8393",
+        "callSign": "ACA646",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FHMO",
+          "modeS": "C013C3",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "United",
+          "iata": "UA",
+          "icao": "UAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:00Z",
+            "local": "2026-03-04 14:00-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:59Z",
+            "local": "2026-03-04 13:59-05:00"
+          },
+          "terminal": "1",
+          "gate": "D26",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYQM",
+            "iata": "YQM",
+            "name": "Moncton",
+            "countryCode": "ca",
+            "timeZone": "America/Moncton"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 21:03Z",
+            "local": "2026-03-04 17:03-04:00"
+          },
+          "quality": [
+            "Basic"
+          ]
+        },
+        "number": "EK 5759",
+        "callSign": "ACA646",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FHMO",
+          "modeS": "C013C3",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "Emirates",
+          "iata": "EK",
+          "icao": "UAE"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:00Z",
+            "local": "2026-03-04 14:00-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 18:59Z",
+            "local": "2026-03-04 13:59-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 19:18Z",
+            "local": "2026-03-04 14:18-05:00"
+          },
+          "terminal": "1",
+          "gate": "D26",
           "runway": "05",
           "quality": [
             "Basic",
@@ -8801,39 +8748,29 @@
         },
         "arrival": {
           "airport": {
-            "icao": "KLGA",
-            "iata": "LGA",
-            "name": "New York",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
+            "icao": "CYQM",
+            "iata": "YQM",
+            "name": "Moncton",
+            "countryCode": "ca",
+            "timeZone": "America/Moncton"
           },
           "scheduledTime": {
-            "utc": "2026-03-04 20:38Z",
-            "local": "2026-03-04 15:38-05:00"
+            "utc": "2026-03-04 21:03Z",
+            "local": "2026-03-04 17:03-04:00"
           },
-          "revisedTime": {
-            "utc": "2026-03-04 20:27Z",
-            "local": "2026-03-04 15:27-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 20:27Z",
-            "local": "2026-03-04 15:27-05:00"
-          },
-          "terminal": "B",
           "quality": [
-            "Basic",
-            "Live"
+            "Basic"
           ]
         },
-        "number": "AC 8466",
-        "callSign": "ACA8466",
+        "number": "AC 646",
+        "callSign": "ACA646",
         "status": "Departed",
         "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
-          "reg": "C-FUJA",
-          "modeS": "C035BB",
-          "model": "Embraer 175"
+          "reg": "C-FHMO",
+          "modeS": "C013C3",
+          "model": "Airbus A220-300"
         },
         "airline": {
           "name": "Air Canada",
@@ -8889,6 +8826,70 @@
           "reg": "C-FFIS",
           "modeS": "C00E17",
           "model": "Boeing 737 MAX 8"
+        },
+        "airline": {
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:00Z",
+            "local": "2026-03-04 14:00-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:06Z",
+            "local": "2026-03-04 14:06-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 19:22Z",
+            "local": "2026-03-04 14:22-05:00"
+          },
+          "terminal": "1",
+          "gate": "F62",
+          "runway": "05",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KLGA",
+            "iata": "LGA",
+            "name": "New York",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 20:38Z",
+            "local": "2026-03-04 15:38-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 20:27Z",
+            "local": "2026-03-04 15:27-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 20:27Z",
+            "local": "2026-03-04 15:27-05:00"
+          },
+          "terminal": "B",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "AC 8466",
+        "callSign": "ACA8466",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FUJA",
+          "modeS": "C035BB",
+          "model": "Embraer 175"
         },
         "airline": {
           "name": "Air Canada",
@@ -9174,6 +9175,247 @@
       {
         "departure": {
           "scheduledTime": {
+            "utc": "2026-03-04 19:15Z",
+            "local": "2026-03-04 14:15-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:11Z",
+            "local": "2026-03-04 14:11-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 19:37Z",
+            "local": "2026-03-04 14:37-05:00"
+          },
+          "terminal": "1",
+          "gate": "F82",
+          "runway": "05",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KBOS",
+            "iata": "BOS",
+            "name": "Boston",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 20:55Z",
+            "local": "2026-03-04 15:55-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 20:47Z",
+            "local": "2026-03-04 15:47-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 20:47Z",
+            "local": "2026-03-04 15:47-05:00"
+          },
+          "terminal": "B",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "AC 770",
+        "callSign": "ACA770",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GJYA",
+          "modeS": "C05EDD",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:15Z",
+            "local": "2026-03-04 14:15-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:11Z",
+            "local": "2026-03-04 14:11-05:00"
+          },
+          "terminal": "1",
+          "gate": "F82",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KBOS",
+            "iata": "BOS",
+            "name": "Boston",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 20:55Z",
+            "local": "2026-03-04 15:55-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 20:47Z",
+            "local": "2026-03-04 15:47-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 20:47Z",
+            "local": "2026-03-04 15:47-05:00"
+          },
+          "terminal": "B",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "TP 8270",
+        "callSign": "ACA770",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GJYA",
+          "modeS": "C05EDD",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "TAP Air Portugal",
+          "iata": "TP",
+          "icao": "TAP"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:15Z",
+            "local": "2026-03-04 14:15-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:11Z",
+            "local": "2026-03-04 14:11-05:00"
+          },
+          "terminal": "1",
+          "gate": "F82",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KBOS",
+            "iata": "BOS",
+            "name": "Boston",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 20:55Z",
+            "local": "2026-03-04 15:55-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 20:47Z",
+            "local": "2026-03-04 15:47-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 20:47Z",
+            "local": "2026-03-04 15:47-05:00"
+          },
+          "terminal": "B",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "UA 8536",
+        "callSign": "ACA770",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GJYA",
+          "modeS": "C05EDD",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "United",
+          "iata": "UA",
+          "icao": "UAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:15Z",
+            "local": "2026-03-04 14:15-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:11Z",
+            "local": "2026-03-04 14:11-05:00"
+          },
+          "terminal": "1",
+          "gate": "F82",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KBOS",
+            "iata": "BOS",
+            "name": "Boston",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 20:55Z",
+            "local": "2026-03-04 15:55-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 20:47Z",
+            "local": "2026-03-04 15:47-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 20:47Z",
+            "local": "2026-03-04 15:47-05:00"
+          },
+          "terminal": "B",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "EK 5796",
+        "callSign": "ACA770",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GJYA",
+          "modeS": "C05EDD",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "Emirates",
+          "iata": "EK",
+          "icao": "UAE"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
             "utc": "2026-03-04 17:45Z",
             "local": "2026-03-04 12:45-05:00"
           },
@@ -9351,247 +9593,6 @@
           "name": "United",
           "iata": "UA",
           "icao": "UAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:15Z",
-            "local": "2026-03-04 14:15-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:11Z",
-            "local": "2026-03-04 14:11-05:00"
-          },
-          "terminal": "1",
-          "gate": "F82",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KBOS",
-            "iata": "BOS",
-            "name": "Boston",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 20:55Z",
-            "local": "2026-03-04 15:55-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 20:47Z",
-            "local": "2026-03-04 15:47-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 20:47Z",
-            "local": "2026-03-04 15:47-05:00"
-          },
-          "terminal": "B",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "UA 8536",
-        "callSign": "ACA770",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GJYA",
-          "modeS": "C05EDD",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "United",
-          "iata": "UA",
-          "icao": "UAL"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:15Z",
-            "local": "2026-03-04 14:15-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:11Z",
-            "local": "2026-03-04 14:11-05:00"
-          },
-          "terminal": "1",
-          "gate": "F82",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KBOS",
-            "iata": "BOS",
-            "name": "Boston",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 20:55Z",
-            "local": "2026-03-04 15:55-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 20:47Z",
-            "local": "2026-03-04 15:47-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 20:47Z",
-            "local": "2026-03-04 15:47-05:00"
-          },
-          "terminal": "B",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "EK 5796",
-        "callSign": "ACA770",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GJYA",
-          "modeS": "C05EDD",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "Emirates",
-          "iata": "EK",
-          "icao": "UAE"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:15Z",
-            "local": "2026-03-04 14:15-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:11Z",
-            "local": "2026-03-04 14:11-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 19:37Z",
-            "local": "2026-03-04 14:37-05:00"
-          },
-          "terminal": "1",
-          "gate": "F82",
-          "runway": "05",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KBOS",
-            "iata": "BOS",
-            "name": "Boston",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 20:55Z",
-            "local": "2026-03-04 15:55-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 20:47Z",
-            "local": "2026-03-04 15:47-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 20:47Z",
-            "local": "2026-03-04 15:47-05:00"
-          },
-          "terminal": "B",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "AC 770",
-        "callSign": "ACA770",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GJYA",
-          "modeS": "C05EDD",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:15Z",
-            "local": "2026-03-04 14:15-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:11Z",
-            "local": "2026-03-04 14:11-05:00"
-          },
-          "terminal": "1",
-          "gate": "F82",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KBOS",
-            "iata": "BOS",
-            "name": "Boston",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 20:55Z",
-            "local": "2026-03-04 15:55-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 20:47Z",
-            "local": "2026-03-04 15:47-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 20:47Z",
-            "local": "2026-03-04 15:47-05:00"
-          },
-          "terminal": "B",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "TP 8270",
-        "callSign": "ACA770",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GJYA",
-          "modeS": "C05EDD",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "TAP Air Portugal",
-          "iata": "TP",
-          "icao": "TAP"
         }
       },
       {
@@ -9821,7 +9822,7 @@
             "Live"
           ]
         },
-        "number": "TS 7339",
+        "number": "AA 9139",
         "callSign": "POE359",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -9832,9 +9833,9 @@
           "model": "Embraer 195"
         },
         "airline": {
-          "name": "Air Transat",
-          "iata": "TS",
-          "icao": "TSC"
+          "name": "American",
+          "iata": "AA",
+          "icao": "AAL"
         }
       },
       {
@@ -9882,7 +9883,7 @@
             "Live"
           ]
         },
-        "number": "AA 9139",
+        "number": "TS 7339",
         "callSign": "POE359",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -9893,9 +9894,9 @@
           "model": "Embraer 195"
         },
         "airline": {
-          "name": "American",
-          "iata": "AA",
-          "icao": "AAL"
+          "name": "Air Transat",
+          "iata": "TS",
+          "icao": "TSC"
         }
       },
       {
@@ -9939,6 +9940,65 @@
         },
         "airline": {
           "name": "Unknown/Private owner"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:25Z",
+            "local": "2026-03-04 14:25-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:20Z",
+            "local": "2026-03-04 14:20-05:00"
+          },
+          "terminal": "3",
+          "gate": "A6",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KLGA",
+            "iata": "LGA",
+            "name": "New York",
+            "countryCode": "us",
+            "timeZone": "America/New_York"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 21:13Z",
+            "local": "2026-03-04 16:13-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 20:43Z",
+            "local": "2026-03-04 15:43-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 20:43Z",
+            "local": "2026-03-04 15:43-05:00"
+          },
+          "terminal": "C",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "WS 6350",
+        "callSign": "EDV5166",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "N296PQ",
+          "modeS": "A30D18",
+          "model": "Canadair CRJ 900"
+        },
+        "airline": {
+          "name": "WestJet",
+          "iata": "WS",
+          "icao": "WJA"
         }
       },
       {
@@ -10008,15 +10068,15 @@
       {
         "departure": {
           "scheduledTime": {
-            "utc": "2026-03-04 19:25Z",
-            "local": "2026-03-04 14:25-05:00"
+            "utc": "2026-03-04 19:20Z",
+            "local": "2026-03-04 14:20-05:00"
           },
           "revisedTime": {
             "utc": "2026-03-04 19:20Z",
             "local": "2026-03-04 14:20-05:00"
           },
           "terminal": "3",
-          "gate": "A6",
+          "gate": "A18",
           "quality": [
             "Basic",
             "Live"
@@ -10024,44 +10084,43 @@
         },
         "arrival": {
           "airport": {
-            "icao": "KLGA",
-            "iata": "LGA",
-            "name": "New York",
+            "icao": "KTPA",
+            "iata": "TPA",
+            "name": "Tampa",
             "countryCode": "us",
             "timeZone": "America/New_York"
           },
           "scheduledTime": {
-            "utc": "2026-03-04 21:13Z",
-            "local": "2026-03-04 16:13-05:00"
+            "utc": "2026-03-04 22:21Z",
+            "local": "2026-03-04 17:21-05:00"
           },
           "revisedTime": {
-            "utc": "2026-03-04 20:43Z",
-            "local": "2026-03-04 15:43-05:00"
+            "utc": "2026-03-04 22:12Z",
+            "local": "2026-03-04 17:12-05:00"
           },
           "runwayTime": {
-            "utc": "2026-03-04 20:43Z",
-            "local": "2026-03-04 15:43-05:00"
+            "utc": "2026-03-04 22:12Z",
+            "local": "2026-03-04 17:12-05:00"
           },
-          "terminal": "C",
           "quality": [
             "Basic",
             "Live"
           ]
         },
-        "number": "WS 6350",
-        "callSign": "EDV5166",
+        "number": "PD 525",
+        "callSign": "POE525",
         "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
+        "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
-          "reg": "N296PQ",
-          "modeS": "A30D18",
-          "model": "Canadair CRJ 900"
+          "reg": "C-GKQX",
+          "modeS": "C060C8",
+          "model": "E295"
         },
         "airline": {
-          "name": "WestJet",
-          "iata": "WS",
-          "icao": "WJA"
+          "name": "Porter",
+          "iata": "PD",
+          "icao": "POE"
         }
       },
       {
@@ -10120,64 +10179,6 @@
           "name": "Air Transat",
           "iata": "TS",
           "icao": "TSC"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:20Z",
-            "local": "2026-03-04 14:20-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:20Z",
-            "local": "2026-03-04 14:20-05:00"
-          },
-          "terminal": "3",
-          "gate": "A18",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KTPA",
-            "iata": "TPA",
-            "name": "Tampa",
-            "countryCode": "us",
-            "timeZone": "America/New_York"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 22:21Z",
-            "local": "2026-03-04 17:21-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 22:12Z",
-            "local": "2026-03-04 17:12-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 22:12Z",
-            "local": "2026-03-04 17:12-05:00"
-          },
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "PD 525",
-        "callSign": "POE525",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GKQX",
-          "modeS": "C060C8",
-          "model": "E295"
-        },
-        "airline": {
-          "name": "Porter",
-          "iata": "PD",
-          "icao": "POE"
         }
       },
       {
@@ -10344,7 +10345,7 @@
             "Live"
           ]
         },
-        "number": "LH 6786",
+        "number": "UA 8317",
         "callSign": "ACA1136",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -10355,9 +10356,9 @@
           "model": "Airbus A220-300"
         },
         "airline": {
-          "name": "Lufthansa",
-          "iata": "LH",
-          "icao": "DLH"
+          "name": "United",
+          "iata": "UA",
+          "icao": "UAL"
         }
       },
       {
@@ -10399,7 +10400,7 @@
             "Live"
           ]
         },
-        "number": "EK 5757",
+        "number": "LH 6786",
         "callSign": "ACA1136",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -10410,9 +10411,9 @@
           "model": "Airbus A220-300"
         },
         "airline": {
-          "name": "Emirates",
-          "iata": "EK",
-          "icao": "UAE"
+          "name": "Lufthansa",
+          "iata": "LH",
+          "icao": "DLH"
         }
       },
       {
@@ -10514,7 +10515,7 @@
             "Live"
           ]
         },
-        "number": "UA 8317",
+        "number": "EK 5757",
         "callSign": "ACA1136",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -10525,9 +10526,9 @@
           "model": "Airbus A220-300"
         },
         "airline": {
-          "name": "United",
-          "iata": "UA",
-          "icao": "UAL"
+          "name": "Emirates",
+          "iata": "EK",
+          "icao": "UAE"
         }
       },
       {
@@ -10587,66 +10588,6 @@
           "name": "Air Canada",
           "iata": "AC",
           "icao": "ACA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:25Z",
-            "local": "2026-03-04 14:25-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:25Z",
-            "local": "2026-03-04 14:25-05:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 19:42Z",
-            "local": "2026-03-04 14:42-05:00"
-          },
-          "terminal": "3",
-          "gate": "B2A",
-          "runway": "05",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYEG",
-            "iata": "YEG",
-            "name": "Edmonton",
-            "countryCode": "ca",
-            "timeZone": "America/Edmonton"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 23:50Z",
-            "local": "2026-03-04 16:50-07:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 23:50Z",
-            "local": "2026-03-04 16:50-07:00"
-          },
-          "baggageBelt": "16",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "F8 631",
-        "callSign": "FLE631",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FFLJ",
-          "modeS": "C00E5C",
-          "model": "Boeing 737-800"
-        },
-        "airline": {
-          "name": "Flair",
-          "iata": "F8",
-          "icao": "FLE"
         }
       },
       {
@@ -10745,6 +10686,66 @@
           "name": "United",
           "iata": "UA",
           "icao": "UAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:25Z",
+            "local": "2026-03-04 14:25-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:25Z",
+            "local": "2026-03-04 14:25-05:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 19:42Z",
+            "local": "2026-03-04 14:42-05:00"
+          },
+          "terminal": "3",
+          "gate": "B2A",
+          "runway": "05",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYEG",
+            "iata": "YEG",
+            "name": "Edmonton",
+            "countryCode": "ca",
+            "timeZone": "America/Edmonton"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 23:50Z",
+            "local": "2026-03-04 16:50-07:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 23:50Z",
+            "local": "2026-03-04 16:50-07:00"
+          },
+          "baggageBelt": "16",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "F8 631",
+        "callSign": "FLE631",
+        "status": "Departed",
+        "codeshareStatus": "IsOperator",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-FFLJ",
+          "modeS": "C00E5C",
+          "model": "Boeing 737-800"
+        },
+        "airline": {
+          "name": "Flair",
+          "iata": "F8",
+          "icao": "FLE"
         }
       },
       {
@@ -10922,7 +10923,7 @@
             "Live"
           ]
         },
-        "number": "AV 6972",
+        "number": "UA 8411",
         "callSign": "ACA690",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -10933,63 +10934,9 @@
           "model": "Airbus A321"
         },
         "airline": {
-          "name": "Avianca",
-          "iata": "AV",
-          "icao": "AVA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 17:40Z",
-            "local": "2026-03-04 12:40-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:27Z",
-            "local": "2026-03-04 14:27-05:00"
-          },
-          "terminal": "1",
-          "gate": "D31",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYYT",
-            "iata": "YYT",
-            "name": "St. John's",
-            "countryCode": "ca",
-            "timeZone": "America/St_Johns"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 20:44Z",
-            "local": "2026-03-04 17:14-03:30"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 22:30Z",
-            "local": "2026-03-04 19:00-03:30"
-          },
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "EY 3486",
-        "callSign": "ACA690",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-FGKZ",
-          "modeS": "C010F6",
-          "model": "Airbus A321"
-        },
-        "airline": {
-          "name": "Etihad",
-          "iata": "EY",
-          "icao": "ETD"
+          "name": "United",
+          "iata": "UA",
+          "icao": "UAL"
         }
       },
       {
@@ -11084,7 +11031,7 @@
             "Live"
           ]
         },
-        "number": "UA 8411",
+        "number": "EY 3486",
         "callSign": "ACA690",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
@@ -11095,23 +11042,23 @@
           "model": "Airbus A321"
         },
         "airline": {
-          "name": "United",
-          "iata": "UA",
-          "icao": "UAL"
+          "name": "Etihad",
+          "iata": "EY",
+          "icao": "ETD"
         }
       },
       {
         "departure": {
           "scheduledTime": {
-            "utc": "2026-03-04 19:30Z",
-            "local": "2026-03-04 14:30-05:00"
+            "utc": "2026-03-04 17:40Z",
+            "local": "2026-03-04 12:40-05:00"
           },
           "revisedTime": {
-            "utc": "2026-03-04 19:28Z",
-            "local": "2026-03-04 14:28-05:00"
+            "utc": "2026-03-04 19:27Z",
+            "local": "2026-03-04 14:27-05:00"
           },
-          "terminal": "3",
-          "gate": "B40",
+          "terminal": "1",
+          "gate": "D31",
           "quality": [
             "Basic",
             "Live"
@@ -11119,37 +11066,39 @@
         },
         "arrival": {
           "airport": {
-            "icao": "CYEG",
-            "iata": "YEG",
-            "name": "Edmonton",
+            "icao": "CYYT",
+            "iata": "YYT",
+            "name": "St. John's",
             "countryCode": "ca",
-            "timeZone": "America/Edmonton"
+            "timeZone": "America/St_Johns"
           },
           "scheduledTime": {
-            "utc": "2026-03-04 23:55Z",
-            "local": "2026-03-04 16:55-07:00"
+            "utc": "2026-03-04 20:44Z",
+            "local": "2026-03-04 17:14-03:30"
           },
           "revisedTime": {
-            "utc": "2026-03-05 00:07Z",
-            "local": "2026-03-04 17:07-07:00"
+            "utc": "2026-03-04 22:30Z",
+            "local": "2026-03-04 19:00-03:30"
           },
-          "baggageBelt": "10",
           "quality": [
             "Basic",
             "Live"
           ]
         },
-        "number": "DL 7153",
+        "number": "AV 6972",
+        "callSign": "ACA690",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
         "isCargo": false,
         "aircraft": {
-          "model": "Boeing 737"
+          "reg": "C-FGKZ",
+          "modeS": "C010F6",
+          "model": "Airbus A321"
         },
         "airline": {
-          "name": "Delta Air Lines",
-          "iata": "DL",
-          "icao": "DAL"
+          "name": "Avianca",
+          "iata": "AV",
+          "icao": "AVA"
         }
       },
       {
@@ -11246,7 +11195,7 @@
             "Live"
           ]
         },
-        "number": "AM 7309",
+        "number": "EK 4673",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
         "isCargo": false,
@@ -11254,9 +11203,9 @@
           "model": "Boeing 737"
         },
         "airline": {
-          "name": "Aeromexico",
-          "iata": "AM",
-          "icao": "AMX"
+          "name": "Emirates",
+          "iata": "EK",
+          "icao": "UAE"
         }
       },
       {
@@ -11298,7 +11247,7 @@
             "Live"
           ]
         },
-        "number": "EK 4673",
+        "number": "DL 7153",
         "status": "Departed",
         "codeshareStatus": "IsCodeshared",
         "isCargo": false,
@@ -11306,9 +11255,61 @@
           "model": "Boeing 737"
         },
         "airline": {
-          "name": "Emirates",
-          "iata": "EK",
-          "icao": "UAE"
+          "name": "Delta Air Lines",
+          "iata": "DL",
+          "icao": "DAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:30Z",
+            "local": "2026-03-04 14:30-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:28Z",
+            "local": "2026-03-04 14:28-05:00"
+          },
+          "terminal": "3",
+          "gate": "B40",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYEG",
+            "iata": "YEG",
+            "name": "Edmonton",
+            "countryCode": "ca",
+            "timeZone": "America/Edmonton"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 23:55Z",
+            "local": "2026-03-04 16:55-07:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-05 00:07Z",
+            "local": "2026-03-04 17:07-07:00"
+          },
+          "baggageBelt": "10",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "AM 7309",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "model": "Boeing 737"
+        },
+        "airline": {
+          "name": "Aeromexico",
+          "iata": "AM",
+          "icao": "AMX"
         }
       },
       {
@@ -11354,61 +11355,6 @@
         "airline": {
           "name": "AirSprint",
           "icao": "ASP"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:25Z",
-            "local": "2026-03-04 14:25-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:33Z",
-            "local": "2026-03-04 14:33-05:00"
-          },
-          "terminal": "1",
-          "gate": "D33",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "CYHZ",
-            "iata": "YHZ",
-            "name": "Halifax",
-            "countryCode": "ca",
-            "timeZone": "America/Halifax"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 21:35Z",
-            "local": "2026-03-04 17:35-04:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 21:31Z",
-            "local": "2026-03-04 17:31-04:00"
-          },
-          "gate": "20",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "AC 612",
-        "callSign": "ACA612",
-        "status": "Departed",
-        "codeshareStatus": "IsOperator",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GJXY",
-          "modeS": "C05EDB",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "Air Canada",
-          "iata": "AC",
-          "icao": "ACA"
         }
       },
       {
@@ -11505,10 +11451,10 @@
             "Live"
           ]
         },
-        "number": "EY 3473",
+        "number": "AC 612",
         "callSign": "ACA612",
         "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
+        "codeshareStatus": "IsOperator",
         "isCargo": false,
         "aircraft": {
           "reg": "C-GJXY",
@@ -11516,9 +11462,9 @@
           "model": "Airbus A220-300"
         },
         "airline": {
-          "name": "Etihad",
-          "iata": "EY",
-          "icao": "ETD"
+          "name": "Air Canada",
+          "iata": "AC",
+          "icao": "ACA"
         }
       },
       {
@@ -11574,6 +11520,61 @@
           "name": "United",
           "iata": "UA",
           "icao": "UAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:25Z",
+            "local": "2026-03-04 14:25-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:33Z",
+            "local": "2026-03-04 14:33-05:00"
+          },
+          "terminal": "1",
+          "gate": "D33",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "CYHZ",
+            "iata": "YHZ",
+            "name": "Halifax",
+            "countryCode": "ca",
+            "timeZone": "America/Halifax"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 21:35Z",
+            "local": "2026-03-04 17:35-04:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 21:31Z",
+            "local": "2026-03-04 17:31-04:00"
+          },
+          "gate": "20",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "EY 3473",
+        "callSign": "ACA612",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GJXY",
+          "modeS": "C05EDB",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "Etihad",
+          "iata": "EY",
+          "icao": "ETD"
         }
       },
       {
@@ -11869,64 +11870,6 @@
             "utc": "2026-03-04 19:50Z",
             "local": "2026-03-04 14:50-05:00"
           },
-          "terminal": "1",
-          "gate": "F34",
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "arrival": {
-          "airport": {
-            "icao": "KDEN",
-            "iata": "DEN",
-            "name": "Denver",
-            "countryCode": "us",
-            "timeZone": "America/Denver"
-          },
-          "scheduledTime": {
-            "utc": "2026-03-04 23:40Z",
-            "local": "2026-03-04 16:40-07:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 23:21Z",
-            "local": "2026-03-04 16:21-07:00"
-          },
-          "runwayTime": {
-            "utc": "2026-03-04 23:21Z",
-            "local": "2026-03-04 16:21-07:00"
-          },
-          "quality": [
-            "Basic",
-            "Live"
-          ]
-        },
-        "number": "OS 8309",
-        "callSign": "ACA1041",
-        "status": "Departed",
-        "codeshareStatus": "IsCodeshared",
-        "isCargo": false,
-        "aircraft": {
-          "reg": "C-GNGV",
-          "modeS": "C067AE",
-          "model": "Airbus A220-300"
-        },
-        "airline": {
-          "name": "Austrian",
-          "iata": "OS",
-          "icao": "AUA"
-        }
-      },
-      {
-        "departure": {
-          "scheduledTime": {
-            "utc": "2026-03-04 19:50Z",
-            "local": "2026-03-04 14:50-05:00"
-          },
-          "revisedTime": {
-            "utc": "2026-03-04 19:50Z",
-            "local": "2026-03-04 14:50-05:00"
-          },
           "runwayTime": {
             "utc": "2026-03-04 20:11Z",
             "local": "2026-03-04 15:11-05:00"
@@ -12036,6 +11979,64 @@
           "name": "United",
           "iata": "UA",
           "icao": "UAL"
+        }
+      },
+      {
+        "departure": {
+          "scheduledTime": {
+            "utc": "2026-03-04 19:50Z",
+            "local": "2026-03-04 14:50-05:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 19:50Z",
+            "local": "2026-03-04 14:50-05:00"
+          },
+          "terminal": "1",
+          "gate": "F34",
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "arrival": {
+          "airport": {
+            "icao": "KDEN",
+            "iata": "DEN",
+            "name": "Denver",
+            "countryCode": "us",
+            "timeZone": "America/Denver"
+          },
+          "scheduledTime": {
+            "utc": "2026-03-04 23:40Z",
+            "local": "2026-03-04 16:40-07:00"
+          },
+          "revisedTime": {
+            "utc": "2026-03-04 23:21Z",
+            "local": "2026-03-04 16:21-07:00"
+          },
+          "runwayTime": {
+            "utc": "2026-03-04 23:21Z",
+            "local": "2026-03-04 16:21-07:00"
+          },
+          "quality": [
+            "Basic",
+            "Live"
+          ]
+        },
+        "number": "OS 8309",
+        "callSign": "ACA1041",
+        "status": "Departed",
+        "codeshareStatus": "IsCodeshared",
+        "isCargo": false,
+        "aircraft": {
+          "reg": "C-GNGV",
+          "modeS": "C067AE",
+          "model": "Airbus A220-300"
+        },
+        "airline": {
+          "name": "Austrian",
+          "iata": "OS",
+          "icao": "AUA"
         }
       },
       {

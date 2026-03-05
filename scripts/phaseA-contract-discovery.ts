@@ -64,6 +64,7 @@ const REQUIRED_QUERY = {
   withLeg: "true",
   direction: "Departure",
   withCancelled: "false",
+  withLocation: "true",
 };
 
 const NULLABILITY_PATHS = [
@@ -453,6 +454,7 @@ function buildPhaseAMarkdown(args: {
   lines.push("- `withLeg=true`");
   lines.push("- `direction=Departure`");
   lines.push("- `withCancelled=false`");
+  lines.push("- `withLocation=true`");
   lines.push("- Time range windows are local Toronto time and each window is <= 12h");
   lines.push("");
 
@@ -531,7 +533,7 @@ async function fetchWindow(
   const encodedTo = encodeURIComponent(spec.toLocal);
   const url =
     `https://aerodatabox.p.rapidapi.com/flights/airports/iata/${AIRPORT}/${encodedFrom}/${encodedTo}` +
-    `?withLeg=${REQUIRED_QUERY.withLeg}&direction=${REQUIRED_QUERY.direction}&withCancelled=${REQUIRED_QUERY.withCancelled}`;
+    `?withLeg=${REQUIRED_QUERY.withLeg}&direction=${REQUIRED_QUERY.direction}&withCancelled=${REQUIRED_QUERY.withCancelled}&withLocation=${REQUIRED_QUERY.withLocation}`;
 
   let lastError = "";
 

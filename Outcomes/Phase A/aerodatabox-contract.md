@@ -1,6 +1,6 @@
 # AeroDataBox Contract Discovery (Phase A)
 
-Generated at (UTC): 2026-03-05T20:18:18.430Z
+Generated at (UTC): 2026-03-05T21:08:35.597Z
 
 ## Request Settings
 
@@ -8,6 +8,7 @@ Generated at (UTC): 2026-03-05T20:18:18.430Z
 - `withLeg=true`
 - `direction=Departure`
 - `withCancelled=false`
+- `withLocation=true`
 - Time range windows are local Toronto time and each window is <= 12h
 
 ## Probe Windows
@@ -101,7 +102,7 @@ Generated at (UTC): 2026-03-05T20:18:18.430Z
 | departure.gate | 558 | 558 | 0 | 22 | 96.21% |
 | arrival.airport.iata | 573 | 573 | 0 | 7 | 98.79% |
 | arrival.airport.icao | 573 | 573 | 0 | 7 | 98.79% |
-| arrival.scheduledTime.utc | 553 | 553 | 0 | 27 | 95.34% |
+| arrival.scheduledTime.utc | 552 | 552 | 0 | 28 | 95.17% |
 | location.lat | 0 | 0 | 0 | 580 | 0% |
 | location.lon | 0 | 0 | 0 | 580 | 0% |
 | location.reportedAtUtc | 0 | 0 | 0 | 580 | 0% |
@@ -114,7 +115,7 @@ Generated at (UTC): 2026-03-05T20:18:18.430Z
 | number+departure.scheduledTime.utc | 580 | 579 | 1 | 99.83% | 100% |
 | number+departure.scheduledTime.utc+arrival.airport.iata | 573 | 572 | 1 | 99.83% | 98.79% |
 | number+departure.scheduledTime.utc+airline.icao | 571 | 570 | 1 | 99.82% | 98.45% |
-| number+departure.scheduledTime.utc+arrival.airport.iata+arrival.scheduledTime.utc | 553 | 552 | 1 | 99.82% | 95.34% |
+| number+departure.scheduledTime.utc+arrival.airport.iata+arrival.scheduledTime.utc | 552 | 551 | 1 | 99.82% | 95.17% |
 | callSign+departure.scheduledTime.utc | 519 | 281 | 238 | 54.14% | 89.48% |
 
 ## Recommendation for Upsert Key (Phase B Input)
