@@ -10,6 +10,10 @@ Applied migrations in Supabase:
 - `20260305203015 harden_raw_flights_security`
 Step 4 manual test complete: `sync-flights` invoked for `2026-03-04T11:00:00Z` to `2026-03-04T13:00:00Z` with `rowsUpserted=130` and stored rows verified in `public.raw_flights`.
 Temporary test setting: edge function is currently deployed with `verify_jwt=false` (to be re-enabled before production use).
+Step 5 implementation started: added backfill runner `scripts\backfill-flights.ts` (day-by-day orchestration, dual-direction support, retries, dry-run mode, configurable delays).
+Step 5 implementation started: added checkpoint migration `supabase\migrations\20260305_005_create_sync_backfill_checkpoints.sql` and applied it to Supabase.
+Step 5 implementation started: `sync-flights` now includes backfill window pacing (`BACKFILL_WINDOW_DELAY_MS`, default `1500`).
+Backfill runner smoke test complete: `--from 2026-03-05T20:00:00Z --to 2026-03-05T22:00:00Z --direction Both` succeeded (`rowsUpserted=289`, `failed=0`).
 
 <!-- Steps
 API Contract Discovery (blocks all other work)

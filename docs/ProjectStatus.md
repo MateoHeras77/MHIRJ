@@ -1,9 +1,3 @@
-This is the most professional move you can make. Before writing a single line of code, you define the **"What"** and the **"Why."** This document is what you would present to a manager or stakeholder to get approval.
-
-Here is the **Project Charter / PRD (Product Requirements Document)** for Phase 1 of your project.
-
----
-
 # ✈️ Project Status Report: MHIRJ Route Optimization Engine
 
 **Phase 1: Data Ingestion & Infrastructure**
