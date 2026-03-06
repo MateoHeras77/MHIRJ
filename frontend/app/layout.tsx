@@ -15,10 +15,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased bg-slate-50`}>
+      <body className={`${inter.className} antialiased bg-slate-50 print:bg-white`}>
         <div className="flex min-h-screen">
           <Sidebar />
-          <main className="flex-1 min-w-0 overflow-auto">
+          <main className="flex-1 min-w-0 overflow-auto print:overflow-visible print:bg-white">
             {children}
           </main>
         </div>

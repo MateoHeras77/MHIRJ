@@ -1,40 +1,49 @@
-import { getCategoryBreakdown, getDailyVolume, getTopRoutes } from '@/lib/queries';
+import { getCategoryBreakdown, getDailyVolume, getExecutiveSummary, getTopRoutes } from '@/lib/queries';
 
 export const dynamic = 'force-dynamic';
+import { InfoTooltip } from '@/components/InfoTooltip';
 import { KpiCard } from '@/components/KpiCard';
+import { RegionalJetShareCard } from '@/components/RegionalJetShareCard';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CategoryDonut } from '@/components/charts/CategoryDonut';
 import { DailyTrend } from '@/components/charts/DailyTrend';
 import { RoutesBar } from '@/components/charts/RoutesBar';
 import { BarChart3, Plane, Map, TrendingUp } from 'lucide-react';
-import { fmt, fmtPct } from '@/lib/constants';
+import { fmt, fmtDateRange, fmtDateTime, fmtPct } from '@/lib/constants';
 
 export default async function DashboardPage() {
-  const [categories, dailyVolume, topRoutes] = await Promise.all([
+  const [summary, categories, dailyVolume, topRoutes] = await Promise.all([
+    getExecutiveSummary(),
     getCategoryBreakdown(),
     getDailyVolume(),
     getTopRoutes(15),
   ]);
 
-  const totalFlights = categories.reduce((s, c) => s + c.cnt, 0);
-  const crjRow = categories.find(c => c.aircraft_category === 'CRJ');
-  const crjPct = crjRow ? (crjRow.cnt / totalFlights) * 100 : 0;
-
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-slate-900">YYZ Departures — Command Center</h1>
+        <div className="flex items-center gap-2">
+          <h1 className="text-2xl font-bold text-slate-900">YYZ Departures — Command Center</h1>
+          <InfoTooltip label="Dashboard methodology">
+            Executive summary uses operating flights only. Marketing codeshares are excluded from all headline KPIs and charts.
+          </InfoTooltip>
+        </div>
         <p className="text-sm text-slate-500 mt-1">
-          Jan 2026 – Mar 2026 · {fmt(totalFlights)} scheduled departures
+          {fmtDateRange(summary.flight_window_start, summary.flight_window_end)} · {fmt(summary.total_flights)} operating departures · Updated {fmtDateTime(summary.data_as_of_utc)}
         </p>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        <KpiCard label="Total Departures" value={fmt(totalFlights)} sub="Jan 2026 – today" icon={Plane} accent="blue" />
-        <KpiCard label="Unique Routes" value="260+" sub="destination airports" icon={Map} accent="blue" />
-        <KpiCard label="Airlines Operating" value="204" sub="distinct carriers" icon={BarChart3} accent="blue" />
-        <KpiCard label="CRJ Fleet Share" value={fmtPct(crjPct)} sub={`${fmt(crjRow?.cnt ?? 0)} CRJ flights`} icon={TrendingUp} accent="red" />
+        <KpiCard label="Total Departures" value={fmt(summary.total_flights)} sub="physical operating flights" icon={Plane} accent="blue" />
+        <KpiCard label="Unique Routes" value={fmt(summary.total_routes)} sub="destination airports" icon={Map} accent="blue" />
+        <KpiCard label="Airlines Operating" value={fmt(summary.total_airlines)} sub="normalized executive brands" icon={BarChart3} accent="blue" />
+        <KpiCard label="CRJ Fleet Share" value={fmtPct(summary.crj_pct)} sub={`${fmt(summary.crj_flights)} CRJ flights`} icon={TrendingUp} accent="red" />
       </div>
+
+      <RegionalJetShareCard
+        summary={summary}
+        subtitle="Why the story matters: Embraer now controls most of the regional-jet flying at YYZ."
+      />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <Card className="border-0 shadow-sm">
@@ -91,6 +100,15 @@ export default async function DashboardPage() {
               ))}
             </tbody>
           </table>
+        </CardContent>
+      </Card>
+
+      <Card className="border-0 shadow-sm print:break-inside-avoid">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-sm font-semibold text-slate-700">Methodology</CardTitle>
+        </CardHeader>
+        <CardContent className="text-sm leading-6 text-slate-600">
+          Dashboard KPIs are based on operating metal only. Marketed codeshares are excluded, airline brands are normalized for executive readability, and opportunity suitability uses scheduled block time as a conservative proxy until airport-reference geometry is added.
         </CardContent>
       </Card>
     </div>

@@ -15,7 +15,7 @@ export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 flex-shrink-0 bg-[#002d7a] text-white flex flex-col min-h-screen">
+    <aside className="w-64 flex-shrink-0 bg-[#002d7a] text-white flex flex-col min-h-screen print:hidden">
       {/* Logo */}
       <div className="px-6 py-6 border-b border-white/10">
         <div className="flex items-center gap-3">
@@ -79,7 +79,7 @@ export function Sidebar() {
       {/* Footer */}
       <div className="px-6 py-4 border-t border-white/10 text-[11px] text-blue-400">
         <div>Data: AeroDataBox</div>
-        <div>Updated daily · Jan 2026–now</div>
+        <div>Operating flights only · Jan 2026–now</div>
       </div>
     </aside>
   );

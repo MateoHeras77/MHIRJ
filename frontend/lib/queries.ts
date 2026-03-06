@@ -6,7 +6,9 @@ import { supabase } from './supabase';
 
 // ─── Shared types ──────────────────────────────────────────────────────────
 
-export type CategoryCount = { aircraft_category: string | null; cnt: number; pct: number };
+export type NumericValue = number | string;
+
+export type CategoryCount = { aircraft_category: string | null; cnt: number; pct: NumericValue };
 export type DailyVolume = { flight_date: string; cnt: number };
 export type TopRoute = { route_code: string; flights: number; avg_block_min: number | null; dominant_category?: string | null };
 export type AirlineRow = {
@@ -14,15 +16,17 @@ export type AirlineRow = {
   total_flights: number;
   routes_served: number;
   avg_delay_min: number | null;
-  on_time_pct: number | null;
+  on_time_pct: NumericValue | null;
   top_aircraft: string | null;
 };
 export type AircraftModelRow = {
   aircraft_model: string | null;
   aircraft_category: string | null;
+  aircraft_generation?: string | null;
+  competitive_segment?: string | null;
   airlines_using: number;
   flights: number;
-  pct: number;
+  pct: NumericValue;
 };
 export type AirlineMatrixRow = {
   airline_name: string | null;
@@ -37,51 +41,66 @@ export type AirlineMatrixRow = {
 };
 export type OpportunityAirlineRow = {
   airline_name: string | null;
+  operator_airlines?: string | null;
   total_flights: number;
   crj_flights: number;
   embraer_flights: number;
   turboprop_flights: number;
+  priority_flights?: number;
   opportunity_flights: number;
-  opportunity_pct: number;
+  opportunity_pct: NumericValue;
 };
 export type OpportunityRouteRow = {
   route_code: string | null;
   airline_name: string | null;
+  operator_airline_name?: string | null;
   aircraft_model: string | null;
   aircraft_category: string | null;
+  aircraft_generation?: string | null;
+  competitive_segment?: string | null;
+  crj_fit_band?: string | null;
+  is_priority_window?: boolean;
   flights: number;
   avg_block_min: number | null;
 };
-export type KpiSummary = {
+export type ExecutiveSummary = {
   total_flights: number;
   total_airlines: number;
   total_routes: number;
-  crj_pct: number;
+  crj_flights: number;
+  crj_pct: NumericValue;
+  regional_jet_flights: number;
+  regional_jet_pct: NumericValue;
+  turboprop_flights: number;
+  crj_regional_share_pct: NumericValue;
+  embraer_regional_share_pct: NumericValue;
+  data_as_of_utc: string | null;
+  flight_window_start: string | null;
+  flight_window_end: string | null;
 };
 export type OpportunitySummary = {
   turboprop_routes: number;
   embraer_routes: number;
   addressable_routes: number;
   addressable_flights: number;
+  priority_routes: number;
+  priority_flights: number;
+  outside_priority_routes: number;
+  data_as_of_utc: string | null;
+  flight_window_start: string | null;
+  flight_window_end: string | null;
 };
 export type DowVolume = { day_of_week: number; cnt: number };
 
 // ─── Dashboard (Page 1) ────────────────────────────────────────────────────
 
-export async function getKpiSummary(): Promise<KpiSummary> {
-  const { data, error } = await supabase.rpc('get_kpi_summary' as never);
-  if (error || !data) {
-    // Fallback: inline query via raw SQL through the view
-    const { data: rows } = await supabase
-      .from('v_flights_enriched')
-      .select('is_crj')
-      .limit(1); // just to test connection
-    void rows;
-    // Use a direct aggregate approach via PostgREST cannot do aggregates directly,
-    // so we use a named function approach. Implement via the queries below.
-    return { total_flights: 0, total_airlines: 0, total_routes: 0, crj_pct: 0 };
-  }
-  return data as KpiSummary;
+export async function getExecutiveSummary(): Promise<ExecutiveSummary> {
+  const { data, error } = await supabase
+    .from('v_executive_summary')
+    .select('*')
+    .single();
+  if (error) throw error;
+  return data as ExecutiveSummary;
 }
 
 export async function getCategoryBreakdown(): Promise<CategoryCount[]> {
@@ -181,7 +200,7 @@ export async function getOpportunityRoutes(): Promise<OpportunityRouteRow[]> {
     .from('v_opportunity_routes')
     .select('*')
     .order('flights', { ascending: false })
-    .limit(50);
+    .limit(80);
   if (error) throw error;
   return (data ?? []) as OpportunityRouteRow[];
 }

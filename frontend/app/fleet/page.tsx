@@ -1,13 +1,16 @@
-import { getAirlineMatrix, getCategoryBreakdown, getTopAircraftModels } from '@/lib/queries';
+import { InfoTooltip } from '@/components/InfoTooltip';
+import { RegionalJetShareCard } from '@/components/RegionalJetShareCard';
+import { getAirlineMatrix, getCategoryBreakdown, getExecutiveSummary, getTopAircraftModels } from '@/lib/queries';
 
 export const dynamic = 'force-dynamic';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { CategoryDonut } from '@/components/charts/CategoryDonut';
-import { fmt, fmtPct, CATEGORY_COLORS } from '@/lib/constants';
+import { fmt, fmtDateRange, fmtDateTime, fmtPct, CATEGORY_COLORS, toNumber } from '@/lib/constants';
 
 export default async function FleetPage() {
-  const [categories, aircraftModels, matrix] = await Promise.all([
+  const [summary, categories, aircraftModels, matrix] = await Promise.all([
+    getExecutiveSummary(),
     getCategoryBreakdown(),
     getTopAircraftModels(25),
     getAirlineMatrix(),
@@ -19,8 +22,12 @@ export default async function FleetPage() {
     <div className="p-6 max-w-7xl mx-auto space-y-6">
       <div>
         <h1 className="text-2xl font-bold text-slate-900">Fleet Analysis</h1>
-        <p className="text-sm text-slate-500 mt-1">Aircraft types operating at YYZ — competitive landscape</p>
+        <p className="text-sm text-slate-500 mt-1">
+          Aircraft types operating at YYZ · {fmtDateRange(summary.flight_window_start, summary.flight_window_end)} · Updated {fmtDateTime(summary.data_as_of_utc)}
+        </p>
       </div>
+
+      <RegionalJetShareCard summary={summary} />
 
       {/* Category cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3">
@@ -66,12 +73,20 @@ export default async function FleetPage() {
                       >
                         {row.aircraft_category ?? 'Other'}
                       </Badge>
+                      {row.aircraft_generation ? (
+                        <Badge variant="outline" className="text-[10px] border-slate-200 text-slate-600">
+                          {row.aircraft_generation}
+                        </Badge>
+                      ) : null}
                     </div>
+                    {row.competitive_segment && row.competitive_segment !== row.aircraft_model ? (
+                      <p className="mt-1 text-[11px] text-slate-500">{row.competitive_segment}</p>
+                    ) : null}
                     <div className="w-full bg-slate-100 rounded-full h-1.5 mt-1">
                       <div
                         className="h-1.5 rounded-full"
                         style={{
-                          width: `${Math.min(100, row.pct * 5)}%`,
+                          width: `${Math.min(100, toNumber(row.pct) * 5)}%`,
                           backgroundColor: CATEGORY_COLORS[row.aircraft_category ?? 'Other'] ?? '#9CA3AF',
                         }}
                       />
@@ -88,10 +103,15 @@ export default async function FleetPage() {
       {/* Airline × Category matrix */}
       <Card className="border-0 shadow-sm">
         <CardHeader className="pb-0">
-          <CardTitle className="text-sm font-semibold text-slate-700">
-            Airline × Aircraft Category Matrix
-            <span className="ml-2 text-xs font-normal text-slate-400">flight counts — top 20 airlines</span>
-          </CardTitle>
+          <div className="flex items-center gap-2">
+            <CardTitle className="text-sm font-semibold text-slate-700">
+              Airline × Aircraft Category Matrix
+              <span className="ml-2 text-xs font-normal text-slate-400">flight counts — top 20 airline brands</span>
+            </CardTitle>
+            <InfoTooltip label="Matrix methodology">
+              Matrix uses operating flights only and rolls cleaned operator names up to executive-facing airline brands such as American, Delta, Air Canada, and Porter.
+            </InfoTooltip>
+          </div>
         </CardHeader>
         <CardContent>
           <div className="overflow-x-auto">
