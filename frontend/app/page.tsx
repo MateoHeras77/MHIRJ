@@ -1,116 +1,266 @@
-import { getCategoryBreakdown, getDailyVolume, getExecutiveSummary, getTopRoutes } from '@/lib/queries';
+import Link from 'next/link';
 
-export const dynamic = 'force-dynamic';
-import { InfoTooltip } from '@/components/InfoTooltip';
-import { KpiCard } from '@/components/KpiCard';
-import { RegionalJetShareCard } from '@/components/RegionalJetShareCard';
+import { AviationHeroGraphic } from '@/components/AviationHeroGraphic';
+import { ExportReportButton } from '@/components/ExportReportButton';
+import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CategoryDonut } from '@/components/charts/CategoryDonut';
-import { DailyTrend } from '@/components/charts/DailyTrend';
-import { RoutesBar } from '@/components/charts/RoutesBar';
-import { BarChart3, Plane, Map, TrendingUp } from 'lucide-react';
 import { fmt, fmtDateRange, fmtDateTime, fmtPct } from '@/lib/constants';
+import { PROFILE } from '@/lib/profile';
+import { getExecutiveSummary, getOpportunitySummary } from '@/lib/queries';
+import {
+  ArrowRight,
+  BarChart3,
+  BriefcaseBusiness,
+  GraduationCap,
+  Radar,
+  ShieldAlert,
+  Sparkles,
+} from 'lucide-react';
 
-export default async function DashboardPage() {
-  const [summary, categories, dailyVolume, topRoutes] = await Promise.all([
+const APP_SECTIONS = [
+  {
+    title: 'Dashboard',
+    description: 'Executive snapshot of operating flights, route density, and fleet share at YYZ.',
+  },
+  {
+    title: 'Fleet Analysis',
+    description: 'Competitive mix by aircraft family, airline exposure, and regional-jet pressure points.',
+  },
+  {
+    title: 'CRJ Opportunity',
+    description: 'Addressable routes, priority windows, and route-level arguments built for sales conversations.',
+  },
+] as const;
+
+export default async function HomePage() {
+  const [summary, opportunity] = await Promise.all([
     getExecutiveSummary(),
-    getCategoryBreakdown(),
-    getDailyVolume(),
-    getTopRoutes(15),
+    getOpportunitySummary(),
   ]);
 
+  const stats = [
+    { label: 'Operating Flights', value: fmt(summary.total_flights) },
+    { label: 'Routes Mapped', value: fmt(summary.total_routes) },
+    { label: 'Airline Brands', value: fmt(summary.total_airlines) },
+    { label: 'Priority Routes', value: fmt(opportunity.priority_routes) },
+  ];
+
+  const insightCards = [
+    {
+      label: 'CRJ Regional Share',
+      value: fmtPct(summary.crj_regional_share_pct),
+      detail: 'Current share inside the regional-jet competitive set at Toronto Pearson.',
+      tone: 'from-[#003DA5] to-cyan-600',
+    },
+    {
+      label: 'Embraer Share',
+      value: fmtPct(summary.embraer_regional_share_pct),
+      detail: 'The installed competitor baseline this tool is designed to challenge.',
+      tone: 'from-amber-500 to-orange-500',
+    },
+    {
+      label: 'Addressable Routes',
+      value: fmt(opportunity.addressable_routes),
+      detail: 'Routes where schedule patterns and equipment suggest a credible CRJ discussion.',
+      tone: 'from-[#0f766e] to-emerald-600',
+    },
+  ];
+
   return (
-    <div className="p-6 max-w-7xl mx-auto space-y-6">
-      <div>
-        <div className="flex items-center gap-2">
-          <h1 className="text-2xl font-bold text-slate-900">YYZ Departures — Command Center</h1>
-          <InfoTooltip label="Dashboard methodology">
-            Executive summary uses operating flights only. Marketing codeshares are excluded from all headline KPIs and charts.
-          </InfoTooltip>
-        </div>
-        <p className="text-sm text-slate-500 mt-1">
-          {fmtDateRange(summary.flight_window_start, summary.flight_window_end)} · {fmt(summary.total_flights)} operating departures · Updated {fmtDateTime(summary.data_as_of_utc)}
-        </p>
-      </div>
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(8,145,178,0.12),_transparent_28%),radial-gradient(circle_at_top_right,_rgba(0,61,165,0.14),_transparent_34%),linear-gradient(180deg,_#e2e8f0_0%,_#f8fafc_24%,_#ffffff_100%)]">
+      <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-8 lg:gap-10 lg:py-10">
+        <section className="overflow-hidden rounded-[36px] border border-slate-200/80 bg-white/90 shadow-[0_24px_60px_rgba(15,23,42,0.08)] backdrop-blur">
+          <div className="grid gap-10 px-6 py-8 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-10 xl:px-10">
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/85 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-600">
+                <Sparkles className="size-3.5 text-[#003DA5]" aria-hidden="true" />
+                {PROFILE.eyebrow}
+              </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        <KpiCard label="Total Departures" value={fmt(summary.total_flights)} sub="physical operating flights" icon={Plane} accent="blue" />
-        <KpiCard label="Unique Routes" value={fmt(summary.total_routes)} sub="destination airports" icon={Map} accent="blue" />
-        <KpiCard label="Airlines Operating" value={fmt(summary.total_airlines)} sub="normalized executive brands" icon={BarChart3} accent="blue" />
-        <KpiCard label="CRJ Fleet Share" value={fmtPct(summary.crj_pct)} sub={`${fmt(summary.crj_flights)} CRJ flights`} icon={TrendingUp} accent="red" />
-      </div>
+              <div className="space-y-4">
+                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#003DA5]">
+                  {PROFILE.name}
+                </p>
+                <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-slate-950 text-balance sm:text-5xl xl:text-[3.6rem] xl:leading-[1.02]">
+                  {PROFILE.headline}
+                </h1>
+                <p className="max-w-2xl text-lg font-medium text-slate-700">{PROFILE.role}</p>
+                <p className="max-w-2xl text-base leading-7 text-slate-600">{PROFILE.intro}</p>
+              </div>
 
-      <RegionalJetShareCard
-        summary={summary}
-        subtitle="Why the story matters: Embraer now controls most of the regional-jet flying at YYZ."
-      />
+              <div className="flex flex-wrap gap-3 text-sm text-slate-600">
+                <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-2">
+                  <BriefcaseBusiness className="size-4 text-[#003DA5]" aria-hidden="true" />
+                  {PROFILE.currentRole}
+                </div>
+                <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-2">
+                  <GraduationCap className="size-4 text-[#C8102E]" aria-hidden="true" />
+                  {PROFILE.education}
+                </div>
+              </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <Card className="border-0 shadow-sm">
-          <CardHeader className="pb-0">
-            <CardTitle className="text-sm font-semibold text-slate-700">Fleet Mix by Category</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CategoryDonut data={categories} />
-          </CardContent>
-        </Card>
+              <div className="flex flex-wrap gap-3">
+                <Button asChild className="bg-[#003DA5] text-white hover:bg-[#003DA5]/90">
+                  <Link href="/dashboard">
+                    Open Dashboard
+                    <ArrowRight className="size-4" aria-hidden="true" />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="border-slate-300 bg-white text-slate-800 hover:bg-slate-50">
+                  <Link href="/opportunity">View CRJ Opportunity</Link>
+                </Button>
+                <ExportReportButton label="Print Portfolio Brief" />
+              </div>
 
-        <Card className="border-0 shadow-sm">
-          <CardHeader className="pb-0">
-            <CardTitle className="text-sm font-semibold text-slate-700">Daily Departure Volume</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <DailyTrend data={dailyVolume} />
-          </CardContent>
-        </Card>
-      </div>
+              <p className="max-w-2xl text-sm leading-6 text-slate-500">{PROFILE.nextStep}</p>
+              <p className="text-sm font-medium text-slate-500">{PROFILE.contactLine}</p>
+            </div>
 
-      <Card className="border-0 shadow-sm">
-        <CardHeader className="pb-0">
-          <CardTitle className="text-sm font-semibold text-slate-700">
-            Top 15 Routes by Departures
-            <span className="ml-2 text-xs font-normal text-slate-400">coloured by dominant aircraft category</span>
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <RoutesBar data={topRoutes as Parameters<typeof RoutesBar>[0]['data']} />
-        </CardContent>
-      </Card>
+            <div className="space-y-4">
+              <AviationHeroGraphic />
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
+                {stats.map((item) => (
+                  <div
+                    key={item.label}
+                    className="rounded-2xl border border-slate-200 bg-slate-50/80 px-4 py-3 shadow-sm"
+                  >
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
+                      {item.label}
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-950">{item.value}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <Card className="border-0 shadow-sm">
-        <CardHeader className="pb-0">
-          <CardTitle className="text-sm font-semibold text-slate-700">Category Breakdown</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-slate-100">
-                <th className="text-left py-2 text-xs font-medium text-slate-500">Category</th>
-                <th className="text-right py-2 text-xs font-medium text-slate-500">Flights</th>
-                <th className="text-right py-2 text-xs font-medium text-slate-500">Share</th>
-              </tr>
-            </thead>
-            <tbody>
-              {categories.map(row => (
-                <tr key={row.aircraft_category ?? 'null'} className="border-b border-slate-50 hover:bg-slate-50">
-                  <td className="py-2 font-medium text-slate-800">{row.aircraft_category ?? 'Unknown'}</td>
-                  <td className="py-2 text-right text-slate-600">{fmt(row.cnt)}</td>
-                  <td className="py-2 text-right text-slate-600">{fmtPct(Number(row.pct))}</td>
-                </tr>
+        <section className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
+          <Card className="border-0 bg-slate-950 text-white shadow-[0_16px_44px_rgba(15,23,42,0.18)]">
+            <CardHeader className="pb-3">
+              <CardTitle className="flex items-center gap-2 text-base font-semibold text-white">
+                <Radar className="size-4 text-cyan-300" aria-hidden="true" />
+                {PROFILE.missionTitle}
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <p className="max-w-3xl text-lg leading-8 text-slate-100">{PROFILE.missionLead}</p>
+              <p className="max-w-3xl text-sm leading-7 text-slate-300">{PROFILE.missionBody}</p>
+              <div className="grid gap-3 sm:grid-cols-3">
+                {insightCards.map((item) => (
+                  <div key={item.label} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <div className={`mb-3 h-1.5 rounded-full bg-gradient-to-r ${item.tone}`} />
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">
+                      {item.label}
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-white">{item.value}</p>
+                    <p className="mt-2 text-sm leading-6 text-slate-300">{item.detail}</p>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="border-slate-200/80 bg-white/90 shadow-sm">
+            <CardHeader className="pb-3">
+              <CardTitle className="text-base font-semibold text-slate-900">Project Operating Context</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4 text-sm leading-7 text-slate-600">
+              <p>
+                Coverage window: {fmtDateRange(summary.flight_window_start, summary.flight_window_end)}.
+              </p>
+              <p>
+                Executive views last refreshed {fmtDateTime(summary.data_as_of_utc)} using operating flights only.
+              </p>
+              <p>
+                The route thesis is built around market share pressure, block-time fit, and airline-level fleet context rather than generic schedule counts.
+              </p>
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
+                  Current Thesis
+                </p>
+                <p className="mt-2 text-sm leading-6 text-slate-700">
+                  The strongest CRJ story at YYZ is not overall traffic volume. It is targeted replacement logic where Embraer and turboprop incumbents leave an opening on speed, frequency, or scope-clause alignment.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section className="grid gap-4 xl:grid-cols-[0.95fr_1.05fr]">
+          <Card className="border-slate-200/80 bg-white/95 shadow-sm">
+            <CardHeader className="pb-3">
+              <CardTitle className="text-base font-semibold text-slate-900">Meet the Analyst</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4 text-sm leading-7 text-slate-600">
+              <p>
+                I built this platform as a portfolio-grade decision tool that connects frontline airport operations knowledge with network-strategy analysis.
+              </p>
+              <p>
+                Working inside YYZ gives me an operational view of how airline schedules translate into turnaround pressure, gate usage, and real-world fleet behavior. My analytics work turns that operational context into a sharper commercial narrative.
+              </p>
+              <p>
+                The result is a route-intelligence brief designed to look credible in front of airline planners, OEM sales teams, and aviation strategy leaders.
+              </p>
+            </CardContent>
+          </Card>
+
+          <div className="grid gap-4 md:grid-cols-3">
+            {PROFILE.toolkit.map((group) => (
+              <Card key={group.title} className="border-0 bg-slate-950 text-white shadow-[0_14px_34px_rgba(15,23,42,0.14)]">
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-300">
+                    {group.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3 text-sm text-slate-200">
+                    {group.items.map((item) => (
+                      <li key={item} className="rounded-xl border border-white/10 bg-white/5 px-3 py-2.5">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        <section className="grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
+          <Card className="border-slate-200/80 bg-white/95 shadow-sm">
+            <CardHeader className="pb-3">
+              <CardTitle className="flex items-center gap-2 text-base font-semibold text-slate-900">
+                <BarChart3 className="size-4 text-[#003DA5]" aria-hidden="true" />
+                Inside the Platform
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              {APP_SECTIONS.map((section) => (
+                <div key={section.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                  <p className="text-sm font-semibold text-slate-900">{section.title}</p>
+                  <p className="mt-1 text-sm leading-6 text-slate-600">{section.description}</p>
+                </div>
               ))}
-            </tbody>
-          </table>
-        </CardContent>
-      </Card>
+            </CardContent>
+          </Card>
 
-      <Card className="border-0 shadow-sm print:break-inside-avoid">
-        <CardHeader className="pb-2">
-          <CardTitle className="text-sm font-semibold text-slate-700">Methodology</CardTitle>
-        </CardHeader>
-        <CardContent className="text-sm leading-6 text-slate-600">
-          Dashboard KPIs are based on operating metal only. Marketed codeshares are excluded, airline brands are normalized for executive readability, and opportunity suitability uses scheduled block time as a conservative proxy until airport-reference geometry is added.
-        </CardContent>
-      </Card>
+          <Card className="border-amber-200 bg-gradient-to-br from-amber-50 via-white to-white shadow-sm">
+            <CardHeader className="pb-3">
+              <CardTitle className="flex items-center gap-2 text-base font-semibold text-slate-900">
+                <ShieldAlert className="size-4 text-amber-600" aria-hidden="true" />
+                Independence Note
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4 text-sm leading-7 text-slate-700">
+              <p>{PROFILE.disclaimer}</p>
+              <p>
+                The current version uses scheduled block time as the conservative suitability filter. Geographic range filtering will be layered in later when the airport reference geometry is complete enough to support it credibly.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+      </div>
     </div>
   );
 }
