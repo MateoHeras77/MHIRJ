@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { AiCopilot } from "@/components/AiCopilot";
 import { Sidebar } from "@/components/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,6 +23,7 @@ export default function RootLayout({
             {children}
           </main>
         </div>
+        <AiCopilot />
       </body>
     </html>
   );
